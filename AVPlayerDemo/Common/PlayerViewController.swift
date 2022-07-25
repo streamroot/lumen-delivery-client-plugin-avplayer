@@ -12,7 +12,8 @@ import LumenAVMeshPlugin
 import LumenAVOrchestratorPlugin
 #endif
 
-private let MANIFEST_URL = "http://wowza-test-cloudfront.streamroot.io/vodOrigin/tos1500.mp4/playlist.m3u8"
+private let MANIFEST_URL = "http://wowza-test-cloudfront.streamroot.io/vodOrigin/tos1500.mp4/playlist.m3u8" //vod
+//private let MANIFEST_URL = "https://wowza-test-cloudfront.streamroot.io/liveOrigin/sintel-live.smil/playlist.m3u8" //live
 
 extension AppDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
