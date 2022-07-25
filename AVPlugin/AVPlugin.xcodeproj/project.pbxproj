@@ -10,6 +10,10 @@
 		2CED614A234FDFF0811B930D /* Pods_Plugin_PluginTests_LumenAVOrchestratorPluginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E45E4A27A206B30E41452C /* Pods_Plugin_PluginTests_LumenAVOrchestratorPluginTests.framework */; };
 		5F8B8DF6658ED2193409A886 /* Pods_Plugin_Mesh_LumenAVMeshPluginTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8E6F8E0AF5FA1D2CB76081 /* Pods_Plugin_Mesh_LumenAVMeshPluginTV.framework */; };
 		669237CF02AC8667AFAB0B38 /* Pods_Plugin_PluginTests_LumenAVMeshPluginTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B853F790C99A192257B3DBD7 /* Pods_Plugin_PluginTests_LumenAVMeshPluginTVTests.framework */; };
+		7A63B2A3288EDF2700861BC8 /* LMAirplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A63B2A2288EDF2700861BC8 /* LMAirplayManager.swift */; };
+		7A63B2A4288EDF2700861BC8 /* LMAirplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A63B2A2288EDF2700861BC8 /* LMAirplayManager.swift */; };
+		7A63B2A5288EDF2700861BC8 /* LMAirplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A63B2A2288EDF2700861BC8 /* LMAirplayManager.swift */; };
+		7A63B2A6288EDF2700861BC8 /* LMAirplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A63B2A2288EDF2700861BC8 /* LMAirplayManager.swift */; };
 		7A9121CD286CAF33000C6702 /* AVPluginMeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9686A8286B925000450C0A /* AVPluginMeshTests.swift */; };
 		7A9121E4286CB7BC000C6702 /* AVPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A96869C286B925000450C0A /* AVPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A9121E6286CB7BC000C6702 /* LMDeliveryClientPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9686B3286B954600450C0A /* LMDeliveryClientPlugin.swift */; };
@@ -88,6 +92,7 @@
 		7756D1154FFE2FA53ABF6B58 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin-Mesh-LumenAVMeshPluginTV.release.xcconfig"; path = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPluginTV/Pods-Plugin-Mesh-LumenAVMeshPluginTV.release.xcconfig"; sourceTree = "<group>"; };
 		7874C69A897DAD928D258733 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests.release.xcconfig"; path = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTests.release.xcconfig"; sourceTree = "<group>"; };
 		78A9A7536560B000C808C1AA /* Pods-Plugin-LumenAVPluginMeshTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plugin-LumenAVPluginMeshTV.debug.xcconfig"; path = "Target Support Files/Pods-Plugin-LumenAVPluginMeshTV/Pods-Plugin-LumenAVPluginMeshTV.debug.xcconfig"; sourceTree = "<group>"; };
+		7A63B2A2288EDF2700861BC8 /* LMAirplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMAirplayManager.swift; sourceTree = "<group>"; };
 		7A9121EF286CB7BC000C6702 /* LumenAVOrchestratorPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LumenAVOrchestratorPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9121FD286CB7C8000C6702 /* LumenAVOrchestratorPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LumenAVOrchestratorPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A912204286CBE67000C6702 /* LumenAVOrchestratorPluginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumenAVOrchestratorPluginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +268,7 @@
 				7A96869C286B925000450C0A /* AVPlugin.h */,
 				7A9686B3286B954600450C0A /* LMDeliveryClientPlugin.swift */,
 				7A9686B5286B970600450C0A /* LMAVPlayerInteractor.swift */,
+				7A63B2A2288EDF2700861BC8 /* LMAirplayManager.swift */,
 			);
 			path = AVPlugin;
 			sourceTree = "<group>";
@@ -836,6 +842,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A63B2A5288EDF2700861BC8 /* LMAirplayManager.swift in Sources */,
 				7A9121E6286CB7BC000C6702 /* LMDeliveryClientPlugin.swift in Sources */,
 				7A9121E7286CB7BC000C6702 /* LMAVPlayerInteractor.swift in Sources */,
 			);
@@ -845,6 +852,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A63B2A6288EDF2700861BC8 /* LMAirplayManager.swift in Sources */,
 				7A9121F5286CB7C8000C6702 /* LMDeliveryClientPlugin.swift in Sources */,
 				7A9121F6286CB7C8000C6702 /* LMAVPlayerInteractor.swift in Sources */,
 			);
@@ -870,6 +878,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A63B2A3288EDF2700861BC8 /* LMAirplayManager.swift in Sources */,
 				7A9686B4286B954600450C0A /* LMDeliveryClientPlugin.swift in Sources */,
 				7A9686B6286B970600450C0A /* LMAVPlayerInteractor.swift in Sources */,
 			);
@@ -887,6 +896,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A63B2A4288EDF2700861BC8 /* LMAirplayManager.swift in Sources */,
 				7A968710286C81E900450C0A /* LMDeliveryClientPlugin.swift in Sources */,
 				7A968711286C81EC00450C0A /* LMAVPlayerInteractor.swift in Sources */,
 			);
