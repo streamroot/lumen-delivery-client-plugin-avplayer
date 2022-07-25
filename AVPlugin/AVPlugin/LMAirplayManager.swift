@@ -1,9 +1,6 @@
 //
 //  LMAirplayManager.swift
 //  AVPlugin
-//
-//  Created by Borgobello, Boris on 25/07/2022.
-//
 
 import Foundation
 import AVKit
@@ -59,7 +56,7 @@ public class LMAirplayManager {
           currentPlayer!.play()
         }
       } else {
-        print("lumen: No AVPlayerItem loaded in Airplay change")
+        print("Lumen: No AVPlayerItem loaded in Airplay change")
       }
     }
     
@@ -87,7 +84,7 @@ public class LMAirplayManager {
       // NOT AirPlay
       return false
     }
-    print("lumen: Airplay device name: \(airplayOutput.portName)")
+    print("Lumen: Airplay device name: \(airplayOutput.portName)")
     return true
   }
 }
