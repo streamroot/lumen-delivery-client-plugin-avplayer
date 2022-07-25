@@ -17,6 +17,7 @@ public class LMAirplayManager {
   private weak var delegate: LMAirplayManagerDelegate?
   private var plugin: LMDeliveryClientPlugin?
   private var currentPlayer: AVPlayer?
+  private var wasOnAirplay: Bool? = nil
   
   public init(delegate: LMAirplayManagerDelegate) {
     self.delegate = delegate
@@ -61,8 +62,12 @@ public class LMAirplayManager {
         print("lumen: No AVPlayerItem loaded in Airplay change")
       }
     }
+    
+    let isPlayingOnAirplay = isPlayingOnAirplay()
+    guard isPlayingOnAirplay != wasOnAirplay else { return }
+    wasOnAirplay = isPlayingOnAirplay
 
-    if isPlayingOnAirplay() {
+    if isPlayingOnAirplay {
       let newConfig = delegate.onAirplayEnabled()
       currentPlayer = newConfig.avPlayerWithItem
       plugin?.stop()
