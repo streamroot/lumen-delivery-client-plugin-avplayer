@@ -74,12 +74,12 @@ extension PlayerViewController : LMAirplayManagerDelegate {
 #if MESH
       .meshOptions { o in
         o.logLevel(.trace)
-        o.meshProperty("classic-qa")
+        o.meshProperty("classic")
       }
 #else
       .orchestratorOptions { o in
         o.logLevel(.trace)
-        o.orchestratorProperty("classic-qa")
+        o.orchestratorProperty("classic")
       }
 #endif
       .start()
