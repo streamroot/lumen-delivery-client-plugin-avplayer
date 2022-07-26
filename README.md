@@ -250,3 +250,19 @@ A helper method is available to display various Mesh/CDN Load Balancer related s
 // The implementer is in charge of creating the view and to displaying it on top of the player controller/layer
 plugin.displayStatsView(someView!)
 ````
+#How to integrate seamlessly with AirPlay
+AirPlay is a protocol that allows wireless streaming between devices of audio, video, device screens, and photos, together with related metadata. Using this protocol, it is possible to view your media content on other devices compatible with Apple.
+
+##Background
+If you are using Lumen SDK on your mobile device or any other apple device and wish to stream your content on any other device such as Apple TV, it is important to follow certain procedures in order to not break your playback.
+
+This is because Lumen (Streamroot) operates as a proxy which hides visibility of the URL of the media content from your device to any other apple device such as Apple TV. The media content URL is converted to a local URL to talk to our proxy. The resulting URL is then a local host URL (Eg: https://localhost:888/).
+
+This URL cannot be read by the device you are trying to stream to since its a local URL. As a result, playback will not begin and you won't be able to stream your media content.
+
+The original URL has to be provided to the device you are trying to cast to in order to stream your media content.
+##Solution
+You can use the following proposition while using Airplay.
+When the viewer switch from iOS device to Airplay, you need to provide the plugin a new AVPlayer
+The Proxy will be stopped when Airplay is used. When the playback returned to iOS device, the Proxy will be started again.
+// Need to explain how it work here
