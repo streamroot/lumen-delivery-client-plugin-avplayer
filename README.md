@@ -265,4 +265,57 @@ The original URL has to be provided to the device you are trying to cast to in o
 You can use the following proposition while using Airplay.
 When the viewer switch from iOS device to Airplay, you need to provide the plugin a new AVPlayer
 The Proxy will be stopped when Airplay is used. When the playback returned to iOS device, the Proxy will be started again.
-// Need to explain how it work here
+
+### Suggest implementation
+In your PlayerViewController class:
+Add a `private var airplayManager: LMAirplayManager!`
+
+init that airplayManager in `viewDidAppear(` method
+`airplayManager = LMAirplayManager(delegate: self)`
+
+Add an extension of `PlayerViewController` to handle `onAirplayEnabled()` and `onAirplayDisabled()` events (as follow:)
+`
+extension PlayerViewController : LMAirplayManagerDelegate {
+  func onAirplayEnabled() -> (avPlayerWithItem: AVPlayer, autoplay: Bool) {
+    statView?.removeFromSuperview()
+    plugin = nil
+
+    let avPlayerWithItem = AVPlayer(url: URL(string: MANIFEST_URL)!)
+    avpController.player = avPlayerWithItem
+    return (avPlayerWithItem: avPlayerWithItem, autoplay: true)
+  }
+
+  func onAirplayDisabled() -> (plugin: LMDeliveryClientPlugin, autoplay: Bool) {
+    // Create and start a delivery client
+    self.plugin = LMDeliveryClientPlugin.newBuilder(uri: URL(string: MANIFEST_URL)!)
+      .createAVPlayer()
+#if MESH
+      .meshOptions { o in
+        o.logLevel(.trace)
+        o.meshProperty("classic") // put your orch Mesh here
+      }
+#else
+      .orchestratorOptions { o in
+        o.logLevel(.trace)
+        o.orchestratorProperty("classic") // put your orch Property here
+      }
+#endif
+      .start()
+    avpController.player = plugin!.avPlayer
+
+    /* Setup stat view
+     * AVPlayerViewController propose `contentOverlayView` to enrich
+     * the view with additional content. However, it does not support
+     * user interaction.
+     *
+     * We recommand to add the stat view as a subview instead and once
+     * the player is started.
+     */
+    statView = UIView(frame: self.view.bounds)
+    avpController.view.addSubview(statView!)
+    plugin!.displayStatsView(statView!)
+
+    return (plugin: plugin!, autoplay: true)
+  }
+}
+`
