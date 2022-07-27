@@ -268,12 +268,13 @@ The Proxy will be stopped when Airplay is used. When the playback returned to iO
 
 ### Suggest implementation
 In your PlayerViewController class:
-Add a `private var airplayManager: LMAirplayManager!`
 
-init that airplayManager in `viewDidAppear(` method
+-Add a `private var airplayManager: LMAirplayManager!`
+
+-Init that airplayManager in `viewDidAppear(` method
 `airplayManager = LMAirplayManager(delegate: self)`
 
-Add an extension of `PlayerViewController` to handle `onAirplayEnabled()` and `onAirplayDisabled()` events (as follow:)
+-Add an extension of `PlayerViewController` to handle `onAirplayEnabled()` and `onAirplayDisabled()` events (as follow:)
 
     extension PlayerViewController : LMAirplayManagerDelegate {
       func onAirplayEnabled() -> (avPlayerWithItem: AVPlayer, autoplay: Bool) {
