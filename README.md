@@ -271,7 +271,8 @@ In your PlayerViewController class:
 
 -Add a `private var airplayManager: LMAirplayManager!`
 
--Init that airplayManager in `viewDidAppear(` method
+-Turn off the default Airplay Notification inside our Plugin and Init the airplayManager in `viewDidAppear(` method
+`self.plugin?.turnOffDefaultAirplayNotification()`
 `airplayManager = LMAirplayManager(delegate: self)`
 
 -Add an extension of `PlayerViewController` to handle `onAirplayEnabled()` and `onAirplayDisabled()` events (as follow:)

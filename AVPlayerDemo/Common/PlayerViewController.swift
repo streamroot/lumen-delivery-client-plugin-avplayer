@@ -47,6 +47,10 @@ class PlayerViewController: UIViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+
+    // add this line to turn off DefaultAirplayNotification inside our Plugin first
+    self.plugin?.turnOffDefaultAirplayNotification()
+
     airplayManager = LMAirplayManager(delegate: self)
   }
   
