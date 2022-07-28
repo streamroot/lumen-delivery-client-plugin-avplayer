@@ -1,0 +1,3103 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0F935ADA5B46A4C39867943C9044AAAA /* LumenOrchestratorSDK-tvOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 18D4A5CF6D559C2C70D109A1A2404923 /* Build configuration list for PBXAggregateTarget "LumenOrchestratorSDK-tvOS" */;
+			buildPhases = (
+				E5FF40F0960B8D804E3169D38BBD9C1E /* [CP] Copy dSYMs */,
+			);
+			dependencies = (
+			);
+			name = "LumenOrchestratorSDK-tvOS";
+		};
+		443F31BD4702BD96D90E86160F9A476D /* LumenMeshSDK-tvOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0D87FF2401D5D3AEDFAC1A9F20EB279F /* Build configuration list for PBXAggregateTarget "LumenMeshSDK-tvOS" */;
+			buildPhases = (
+				D263C719B1A34B5C79D40D021B065836 /* [CP] Copy dSYMs */,
+			);
+			dependencies = (
+			);
+			name = "LumenMeshSDK-tvOS";
+		};
+		5951C0F62A73160F9662EE8840693096 /* LumenOrchestratorSDK-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5EF8D6593737F86C5CF9746B49A2B583 /* Build configuration list for PBXAggregateTarget "LumenOrchestratorSDK-iOS" */;
+			buildPhases = (
+				71A977D9A06B6FC38611659F71B3FF8E /* [CP] Copy dSYMs */,
+			);
+			dependencies = (
+			);
+			name = "LumenOrchestratorSDK-iOS";
+		};
+		7D9C704864E320986214A866B26B5271 /* LumenMeshSDK-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BD6BEF56FE19E846755C904C67EEAAD1 /* Build configuration list for PBXAggregateTarget "LumenMeshSDK-iOS" */;
+			buildPhases = (
+				A912C3931985107554133F3E82362EFC /* [CP] Copy dSYMs */,
+			);
+			dependencies = (
+			);
+			name = "LumenMeshSDK-iOS";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		06AC49303689919A12A69E9DEFFC0EB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E1F74047CAE9009037AFF5FCE00AF8 /* Foundation.framework */; };
+		1340AB6FE1A1251F2BDC0D2DC47B56AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E1F74047CAE9009037AFF5FCE00AF8 /* Foundation.framework */; };
+		1C8E1CE316B007B6D68175E9B7485BF9 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180CC2702C2A57C7612A033D880E053 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-dummy.m */; };
+		1D06D57B132D2F485E4E1E67C19D11F8 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28081E42FA22FFEF11879BCBB9EAD592 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-dummy.m */; };
+		20F620A62E59D6C2E48B017A881C483E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862ADB3E8E3DC6FD921084C65D936619 /* Foundation.framework */; };
+		27A6FAFAFA984E4A209ABD9677B91792 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BC900EF46469AF0061375D3A608A29 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-dummy.m */; };
+		329081946146CC27CC3ACF680D9CBAF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862ADB3E8E3DC6FD921084C65D936619 /* Foundation.framework */; };
+		3542167EEBEDE2CBE0E2EE8C035C6A06 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7983CA144753C92B1ED55737C8BA7 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-dummy.m */; };
+		447D0C8E3229EA8145A4A3D56D93D8AD /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7E64F588FE44494FA8013463924766 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481860F51046698CEE57323134389105 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E1F74047CAE9009037AFF5FCE00AF8 /* Foundation.framework */; };
+		4ACCC7C458CDA577DB6424F1FB39B31E /* Pods-Plugin-Mesh-LumenAVMeshPlugin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C068F00BEDA63A6A051EFA467B8BAC59 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C3BEA53C5E83F2FCCD2837504184BB1 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A69336FC83C3DC792638D8059B57F174 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57FFEC7945D12AA50FF7F0C62C1C1507 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862ADB3E8E3DC6FD921084C65D936619 /* Foundation.framework */; };
+		5B79BA116FF3BFE79F657A6C0EF290AB /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BBA9E118856CA86AFBFE90DE2A91F /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-dummy.m */; };
+		5DF2B654F3E3C5AE437AE9C09FFF5D27 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7938D605E9D48BEBE951C1D005C527 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-dummy.m */; };
+		5FE5658A244A89E986E4EC65890B62EB /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB19748B4FBBB9D52C1D61546A3C569 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-dummy.m */; };
+		60BF62B439F40C3A55AD620416ED8026 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CCE8BDE584B59F981B2A7A491199D6 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64ACB54CE43535F4A699E826BA0CCA1B /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D2E75DE58E4395293DBF41A4574E025 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78A3F78C2AF993C3E41A2BC67C31DB68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862ADB3E8E3DC6FD921084C65D936619 /* Foundation.framework */; };
+		7AF867E9B33DDDF12C13552A45F0C860 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86221D0637FE5F67FE022E03C67705AE /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C1F251FF8F0B3AC536E74B0203B168E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862ADB3E8E3DC6FD921084C65D936619 /* Foundation.framework */; };
+		7F9448D79DC7D0019FA31C32ED33D546 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E1F74047CAE9009037AFF5FCE00AF8 /* Foundation.framework */; };
+		80C4C721954BA7703E95CBC911002B48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E1F74047CAE9009037AFF5FCE00AF8 /* Foundation.framework */; };
+		90C54784EA65D043A8A3F035F0E36022 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 259914C15E52101681DB1331BEE3D663 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		912A65A1A1C950C13A3D2DF17145C9E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E1F74047CAE9009037AFF5FCE00AF8 /* Foundation.framework */; };
+		9636B8D345D547DA00F2C5E30153E308 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D683D15A80D9026EC1958009670D350B /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-dummy.m */; };
+		B03CCF4A7CFF933A5A081C296559560A /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05582B97B2C333033A8E8A57B89AB4A9 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA416D71127C93CF923000D250D43586 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B569042B85E57068096B4E42FEF008BB /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDA20F04E8F044622027243C3034937A /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A5F2B5FB9C2241670C3B72AAB1AC45 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-dummy.m */; };
+		BEE3BCCBCA3312B22B70A159B5A5A1A6 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EEDCA5043078C878FA5A220601B96 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-dummy.m */; };
+		C9D52C8A5C44143C5ED26D21CB745EC2 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE08DC869D186FE9C13C380173A543E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D202721459CCD5CE15F26180326A29D8 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F508551596680013D568CE6CCD505A2 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D622C481DECFF3E591E3023B205659D2 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD96C5AB6B920907982527D9DE31B2D /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-dummy.m */; };
+		DA82A4796A3C9C4A2C535D6C0FB1BE1B /* Pods-Plugin-Mesh-LumenAVMeshPlugin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77507F41D0ECD8E695BAC93DEBD9C941 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-dummy.m */; };
+		EB6C30EDEAE7B9347436D9CC567A921F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862ADB3E8E3DC6FD921084C65D936619 /* Foundation.framework */; };
+		F788B3DEC62DB90BD90A24E61EDD6849 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 724B242C078AB71CB8C899F7121317A2 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0068E5DD310CB6A4FE223193D0A8CE6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D9C704864E320986214A866B26B5271;
+			remoteInfo = "LumenMeshSDK-iOS";
+		};
+		564A7ED96F27BCCF4E8F7E35CF084ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5951C0F62A73160F9662EE8840693096;
+			remoteInfo = "LumenOrchestratorSDK-iOS";
+		};
+		57BE845E340CC750C338AABA0FC7CBC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443F31BD4702BD96D90E86160F9A476D;
+			remoteInfo = "LumenMeshSDK-tvOS";
+		};
+		635A834312A7936FF402768087135D36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5951C0F62A73160F9662EE8840693096;
+			remoteInfo = "LumenOrchestratorSDK-iOS";
+		};
+		69435CE521ECC323D2E300A306D602BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F935ADA5B46A4C39867943C9044AAAA;
+			remoteInfo = "LumenOrchestratorSDK-tvOS";
+		};
+		69CDD9EA0C6925A3CF06EDB5592532CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F935ADA5B46A4C39867943C9044AAAA;
+			remoteInfo = "LumenOrchestratorSDK-tvOS";
+		};
+		89E8816860C2870F79827BAE8F9AE3BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443F31BD4702BD96D90E86160F9A476D;
+			remoteInfo = "LumenMeshSDK-tvOS";
+		};
+		9D4AAC46161B0A53463F6158219A397E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443F31BD4702BD96D90E86160F9A476D;
+			remoteInfo = "LumenMeshSDK-tvOS";
+		};
+		C0F58C59AB8C2EC28958C70F684138C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D9C704864E320986214A866B26B5271;
+			remoteInfo = "LumenMeshSDK-iOS";
+		};
+		C856BF93DE9877455E02805BCD1E38C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D9C704864E320986214A866B26B5271;
+			remoteInfo = "LumenMeshSDK-iOS";
+		};
+		E5C63A1415CA1F4BB3E404982DD36A35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F935ADA5B46A4C39867943C9044AAAA;
+			remoteInfo = "LumenOrchestratorSDK-tvOS";
+		};
+		F9B709B95062F094AF9EA7124B2B9837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5951C0F62A73160F9662EE8840693096;
+			remoteInfo = "LumenOrchestratorSDK-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		015842D497734A3471D4024737DAF144 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.release.xcconfig"; sourceTree = "<group>"; };
+		01C19B9D0C23AF6D8D646B480346B0CA /* Pods-Plugin-Mesh-LumenAVMeshPlugin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-Mesh-LumenAVMeshPlugin-Info.plist"; sourceTree = "<group>"; };
+		03A5F2B5FB9C2241670C3B72AAB1AC45 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo-dummy.m"; sourceTree = "<group>"; };
+		04EFDE62B1AD20087553EF6E91355357 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo-frameworks.sh"; sourceTree = "<group>"; };
+		05582B97B2C333033A8E8A57B89AB4A9 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-umbrella.h"; sourceTree = "<group>"; };
+		05A3098A33C2AE95AEA2595630CAB0FA /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-Info.plist"; sourceTree = "<group>"; };
+		07A95376EC4C722C80D2E71EC3025074 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		09613E08D0C64D3A7C133ACF68B3768C /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D2E75DE58E4395293DBF41A4574E025 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Plugin-Mesh-LumenAVMeshPluginTV-umbrella.h"; sourceTree = "<group>"; };
+		12C46ABCB8C28775696A149771B64D1F /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV"; path = Pods_DemoApp_Orchestrator_AVPlayerOrchestratorDemoTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		132EBC9B2479FF6D302CCCCF65EFB03A /* LumenOrchestratorSDK-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LumenOrchestratorSDK-tvOS.release.xcconfig"; path = "../LumenOrchestratorSDK-tvOS/LumenOrchestratorSDK-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		19E9DBE7B430AD2D4CDCFA6DF6123D52 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.debug.xcconfig"; sourceTree = "<group>"; };
+		1B3D5AAE60911AFB3C7E016B61267E73 /* Pods-Plugin-Mesh-LumenAVMeshPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-Mesh-LumenAVMeshPlugin.release.xcconfig"; sourceTree = "<group>"; };
+		1B5D1D9805314673AEC8662D2789C0B0 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Plugin-Mesh-LumenAVMeshPluginTV-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E2F70C10D47A73BA44B932EF81F1272 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-Mesh-LumenAVMeshPlugin-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E8A162B093F31F6B783CF4E2597721D /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1EB031BE0527984A0BD996C2C6E5238E /* LumenMeshSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LumenMeshSDK.framework; path = Carthage/Build/iOS/LumenMeshSDK.framework; sourceTree = "<group>"; };
+		1ECB5D76501E4F7649822EF1C1DB8098 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2224807EBEE3942DC5B14DB6E3A7886E /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-acknowledgements.plist"; sourceTree = "<group>"; };
+		253AB0BEBBF8A9F54D0523432E92DF80 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo.modulemap"; sourceTree = "<group>"; };
+		259914C15E52101681DB1331BEE3D663 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-umbrella.h"; sourceTree = "<group>"; };
+		28081E42FA22FFEF11879BCBB9EAD592 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-dummy.m"; sourceTree = "<group>"; };
+		2B0EEDCA5043078C878FA5A220601B96 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-dummy.m"; sourceTree = "<group>"; };
+		2C3194F65E068AAE81F93171E37A5369 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-acknowledgements.plist"; sourceTree = "<group>"; };
+		2CBDD7B60C1A461B9D784E25A87A2178 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests-Info.plist"; sourceTree = "<group>"; };
+		2E5C1CAAB73780FDB0A685FBEF5A3BD7 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.release.xcconfig"; sourceTree = "<group>"; };
+		2F508551596680013D568CE6CCD505A2 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-umbrella.h"; sourceTree = "<group>"; };
+		3086095E5CDEA3EB27C8A22A8603EBCF /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-Info.plist"; sourceTree = "<group>"; };
+		3180CC2702C2A57C7612A033D880E053 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-dummy.m"; sourceTree = "<group>"; };
+		31F6C744D6198ED702818ED7049124FE /* LumenOrchestratorSDK-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LumenOrchestratorSDK-tvOS.debug.xcconfig"; path = "../LumenOrchestratorSDK-tvOS/LumenOrchestratorSDK-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		336181A26DF73507BC4ABEF938768159 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-frameworks.sh"; sourceTree = "<group>"; };
+		33894012C1EBE9AFE499FD81E3E1798A /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		35C7827E974AB8FD9E49C0F5FB008D1E /* LumenOrchestratorSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LumenOrchestratorSDK.framework; path = Carthage/Build/iOS/LumenOrchestratorSDK.framework; sourceTree = "<group>"; };
+		38C51834616BC0025D4C64C956238538 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo-Info.plist"; sourceTree = "<group>"; };
+		38C86DF5FD1D09ABEB4C601EA4076D80 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.release.xcconfig"; sourceTree = "<group>"; };
+		3A8741B79A4DFF08CEE657A75C4FC537 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CF4C7B5AE4EEC64EAA610568C6E1B9D /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Plugin-Mesh-LumenAVMeshPluginTV.modulemap"; sourceTree = "<group>"; };
+		3DF7BDC0F1FC3D9A3DF258ADF40A9E63 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		434ADAD6C306AE0A884A41490ED3D8E0 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin"; path = Pods_Plugin_Orchestrator_LumenAVOrchestratorPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44370F5C772DD8115701D27C9798D422 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Plugin-Mesh-LumenAVMeshPluginTV"; path = Pods_Plugin_Mesh_LumenAVMeshPluginTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C537423A8B4ADB93855CE5468EE8A0 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests"; path = Pods_Plugin_PluginTests_LumenAVMeshPluginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADA0CC8FBC4B330E203372ECF8BB023 /* LumenMeshSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LumenMeshSDK.framework; path = Carthage/Build/tvOS/LumenMeshSDK.framework; sourceTree = "<group>"; };
+		4D66D4C10A34DE10043240667F86BC83 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests"; path = Pods_Plugin_PluginTests_LumenAVMeshPluginTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC413BB369D118FDCEAFF734C434F3A /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests"; path = Pods_Plugin_PluginTests_LumenAVOrchestratorPluginTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EFE5263125EC3A86157C6A34AF82EF9 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-frameworks.sh"; sourceTree = "<group>"; };
+		509C08D4322E42769D2030AF95EEF916 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests"; path = Pods_Plugin_PluginTests_LumenAVOrchestratorPluginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BC900EF46469AF0061375D3A608A29 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-dummy.m"; sourceTree = "<group>"; };
+		54E1F74047CAE9009037AFF5FCE00AF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		55747E5102E8921E3243292B03A52027 /* LumenMeshSDK-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LumenMeshSDK-tvOS.release.xcconfig"; path = "../LumenMeshSDK-tvOS/LumenMeshSDK-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		5B30309BEB3DEECFC0AB9DCED47B31BE /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests.modulemap"; sourceTree = "<group>"; };
+		5BB19748B4FBBB9D52C1D61546A3C569 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-dummy.m"; sourceTree = "<group>"; };
+		647AB7AED9E15544F4232DF6EA531572 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV"; path = Pods_DemoApp_Mesh_AVPlayerMeshDemoTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652ABAD95E9BE52149AA0D56FD27610A /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		686B3038BEA43B0F5515AA094EC8C5FB /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		698B0950ACABF1E37D90821E3BB9712D /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests-frameworks.sh"; sourceTree = "<group>"; };
+		702834628CA6E6A7CB6CCF5EFE1267A8 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.modulemap"; sourceTree = "<group>"; };
+		724B242C078AB71CB8C899F7121317A2 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-umbrella.h"; sourceTree = "<group>"; };
+		77507F41D0ECD8E695BAC93DEBD9C941 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Plugin-Mesh-LumenAVMeshPlugin-dummy.m"; sourceTree = "<group>"; };
+		7754DBF43CDF607891ACB53B12DAEB6B /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-frameworks.sh"; sourceTree = "<group>"; };
+		77DDE74037DA023952022B178901A5FE /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.modulemap"; sourceTree = "<group>"; };
+		7B41740D7CED326EF5DBF1ED634DD90B /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-Mesh-LumenAVMeshPluginTV-Info.plist"; sourceTree = "<group>"; };
+		7FB205531636A2CD7D36379BFB68A070 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-Info.plist"; sourceTree = "<group>"; };
+		81E03DF93F4A3222DC589E59BBFECD3A /* Pods-DemoApp-Mesh-AVPlayerMeshDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo.release.xcconfig"; sourceTree = "<group>"; };
+		82E8B58FF926F5A6A0D5128F4751E475 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.modulemap"; sourceTree = "<group>"; };
+		84CCE8BDE584B59F981B2A7A491199D6 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-umbrella.h"; sourceTree = "<group>"; };
+		86221D0637FE5F67FE022E03C67705AE /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo-umbrella.h"; sourceTree = "<group>"; };
+		862ADB3E8E3DC6FD921084C65D936619 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8741F8361E4F77322224FCA429F04076 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A4742E6F9A838BC4B2A6B8B52AB5203 /* LumenMeshSDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LumenMeshSDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8A60E5121B05165ADC785E42E248A8E6 /* LumenOrchestratorSDK-tvOS-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "LumenOrchestratorSDK-tvOS-copy-dsyms.sh"; path = "../LumenOrchestratorSDK-tvOS/LumenOrchestratorSDK-tvOS-copy-dsyms.sh"; sourceTree = "<group>"; };
+		8B7E64F588FE44494FA8013463924766 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-umbrella.h"; sourceTree = "<group>"; };
+		8BE08DC869D186FE9C13C380173A543E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-umbrella.h"; sourceTree = "<group>"; };
+		8C2DB2AD80C2200393F5DB1ADB98BB0E /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8DC7983CA144753C92B1ED55737C8BA7 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-dummy.m"; sourceTree = "<group>"; };
+		8EEFD0A6BA1D886C64D0C23AEF1F87FE /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.release.xcconfig"; sourceTree = "<group>"; };
+		923282659329B338E94DCFCBBE4B7FDE /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-Info.plist"; sourceTree = "<group>"; };
+		9AD196F039D72DA309846F6EF1DA44FF /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-Info.plist"; sourceTree = "<group>"; };
+		9BBD4E2B7F248898C51D8E8608E7190A /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9C1BBA9E118856CA86AFBFE90DE2A91F /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-dummy.m"; sourceTree = "<group>"; };
+		9D1A675AFAA74995E3A9396B52F2F694 /* Pods-Plugin-Mesh-LumenAVMeshPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-Mesh-LumenAVMeshPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF0A1A91F0ECAFC87AC842A5BCECDA2 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6BCD4A7430398504E34844B6A29862 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9F7EF8776BC1270EA91AE01F782FBC89 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A69336FC83C3DC792638D8059B57F174 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-umbrella.h"; sourceTree = "<group>"; };
+		A9481B14F39BEF2621A2578C136285D5 /* Pods-Plugin-Mesh-LumenAVMeshPlugin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Plugin-Mesh-LumenAVMeshPlugin.modulemap"; sourceTree = "<group>"; };
+		AE29B0E481E912BA3741AA9B87780168 /* Pods-Plugin-Mesh-LumenAVMeshPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Plugin-Mesh-LumenAVMeshPlugin"; path = Pods_Plugin_Mesh_LumenAVMeshPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B033F8A50B8C23A990F7F3D745A7D2D6 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B0386FA36EABFE532D69A74612DF1053 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.debug.xcconfig"; sourceTree = "<group>"; };
+		B0E4DC66C98D937827CFE03BF7FFBD76 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.modulemap"; sourceTree = "<group>"; };
+		B569042B85E57068096B4E42FEF008BB /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests-umbrella.h"; sourceTree = "<group>"; };
+		B610A4BFDEE9941257A1DFC1C817C55F /* LumenOrchestratorSDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LumenOrchestratorSDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B692675FC36B77412809B9554AD55CB3 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-frameworks.sh"; sourceTree = "<group>"; };
+		B7310F0DBC3A764CCDC7AE503C15C14C /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-Mesh-LumenAVMeshPluginTV.release.xcconfig"; sourceTree = "<group>"; };
+		B808B862C24416BCD9B7C53EC3FEF6C2 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-frameworks.sh"; sourceTree = "<group>"; };
+		B92ECDB694272984101452E85EB440EE /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-Mesh-LumenAVMeshPluginTV.debug.xcconfig"; sourceTree = "<group>"; };
+		B9F625153E4E39CAAF0BD83DD7A6A7D8 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.release.xcconfig"; sourceTree = "<group>"; };
+		BA3CB1E5D091CEEA45DAB76C0D738801 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.modulemap"; sourceTree = "<group>"; };
+		BC8F2199DB55EACC86B2DB948C515A8E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		BF6426732A33929A4CB1A4DDB64FCF56 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo"; path = Pods_DemoApp_Orchestrator_AVPlayerOrchestratorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9406C601DB652A0429CA2AC3850294 /* LumenMeshSDK-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LumenMeshSDK-tvOS.debug.xcconfig"; path = "../LumenMeshSDK-tvOS/LumenMeshSDK-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C068F00BEDA63A6A051EFA467B8BAC59 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Plugin-Mesh-LumenAVMeshPlugin-umbrella.h"; sourceTree = "<group>"; };
+		C36DBE1EC94D89F91BAF534A49BDE7AB /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.debug.xcconfig"; sourceTree = "<group>"; };
+		C5452999DD1334C9B23415FFF7116EB5 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV"; path = Pods_Plugin_Orchestrator_LumenAVOrchestratorPluginTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C861E454B64BDFD5AE2AC8DE6374652F /* LumenOrchestratorSDK-iOS-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "LumenOrchestratorSDK-iOS-copy-dsyms.sh"; sourceTree = "<group>"; };
+		C9FFD559E0D109A80D43BE3796EE864E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA302558DABF639D74C3FB725E174055 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CD4DD5D0F540BD73467658E33BD3F350 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDEC9CA572955D93129E0F190EFE408F /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE4DCD8BD850C779C59C9E6EEEF5C2E7 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-Mesh-LumenAVMeshPluginTV-acknowledgements.plist"; sourceTree = "<group>"; };
+		D0EDEEE08DBFEF85D1B0B637B02C269C /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.release.xcconfig"; sourceTree = "<group>"; };
+		D15C6E8E28A666E8E9E93456F0BFCDE5 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Plugin-Mesh-LumenAVMeshPlugin-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D31170E784698491A88BF2BDD3E23628 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.modulemap"; sourceTree = "<group>"; };
+		D393DFCFD58E7D0731C8B505AEFB26AE /* LumenMeshSDK-iOS-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "LumenMeshSDK-iOS-copy-dsyms.sh"; sourceTree = "<group>"; };
+		D683D15A80D9026EC1958009670D350B /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests-dummy.m"; sourceTree = "<group>"; };
+		D8E51A2AD5BFB84BA3B27AF25E69146E /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		DB0323927659E83B51EEDA40DDCB5191 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-frameworks.sh"; sourceTree = "<group>"; };
+		DB34AF76E12D7161265D7B9BA316EF87 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE24A1A804C1C6BCFA7FCCC2899E79A1 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF53A1565B4892B14CE402273DF1B6D6 /* LumenOrchestratorSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LumenOrchestratorSDK.framework; path = Carthage/Build/tvOS/LumenOrchestratorSDK.framework; sourceTree = "<group>"; };
+		DF681EF369AE2B4CEAF07AF8BF27E728 /* LumenMeshSDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LumenMeshSDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DF7F65E0AF2D5CC31484D63BB61BCFF3 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E151EE87016CECC9C523B32EA8FA7CFC /* LumenOrchestratorSDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LumenOrchestratorSDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E53DAB7061E1E26D7C2970F3B6E8A6FF /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.modulemap"; sourceTree = "<group>"; };
+		E90E10C43818AABC7B06FE2FE203306B /* LumenMeshSDK-tvOS-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "LumenMeshSDK-tvOS-copy-dsyms.sh"; path = "../LumenMeshSDK-tvOS/LumenMeshSDK-tvOS-copy-dsyms.sh"; sourceTree = "<group>"; };
+		EC724033ADCE6DDCF282CF62C970D1F0 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.modulemap"; sourceTree = "<group>"; };
+		ED4115CD73DE3B2F2319B370F524DD7E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-Info.plist"; sourceTree = "<group>"; };
+		EEE6558B6581EB7FC37AADDD003C2928 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F14D0912C4C761817A7B1C8A7DF2B453 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DemoApp-Mesh-AVPlayerMeshDemo"; path = Pods_DemoApp_Mesh_AVPlayerMeshDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2584D76C150B092DA0A9561E1042684 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F30686D215D2C362A8446CF87E8DF154 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-Info.plist"; sourceTree = "<group>"; };
+		F881818D02092AEC447316E20AAF2AC9 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8904717AFBBFE44B4BD1BA50FBB28C9 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-Info.plist"; sourceTree = "<group>"; };
+		FD7938D605E9D48BEBE951C1D005C527 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Plugin-Mesh-LumenAVMeshPluginTV-dummy.m"; sourceTree = "<group>"; };
+		FDD96C5AB6B920907982527D9DE31B2D /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1194DD30F5F9DCE57B9C431F7C6B328B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F620A62E59D6C2E48B017A881C483E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D98134B98E5AAE785479147662D2E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1F251FF8F0B3AC536E74B0203B168E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5C68BB4D2EEEB51208F534AAA92329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F9448D79DC7D0019FA31C32ED33D546 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2232DB20135D670FCB7D5DB6C6A1551A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C4C721954BA7703E95CBC911002B48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290CFE397DD1ECD5AB093D2B579BEFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FFEC7945D12AA50FF7F0C62C1C1507 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6049CFB7403D562A047A1A0045E9163A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6C30EDEAE7B9347436D9CC567A921F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		666C021BD8E9E9B32097F5DB2122AE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A3F78C2AF993C3E41A2BC67C31DB68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EB595140199C008A058F52AC952CAFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329081946146CC27CC3ACF680D9CBAF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0440984ADA0CF385228620D1C167F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AC49303689919A12A69E9DEFFC0EB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA26DD7B0562FD9D2D7A74AD4E7369F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912A65A1A1C950C13A3D2DF17145C9E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58E0B23F8C8F3D5C1DD0A76F31BAE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1340AB6FE1A1251F2BDC0D2DC47B56AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD386D2AFBC840906BEF27F58B31CCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481860F51046698CEE57323134389105 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0355AB9D7D112908B8D616A0B2C3896A /* Pods-Plugin-Mesh-LumenAVMeshPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				A9481B14F39BEF2621A2578C136285D5 /* Pods-Plugin-Mesh-LumenAVMeshPlugin.modulemap */,
+				D15C6E8E28A666E8E9E93456F0BFCDE5 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-acknowledgements.markdown */,
+				1E2F70C10D47A73BA44B932EF81F1272 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-acknowledgements.plist */,
+				77507F41D0ECD8E695BAC93DEBD9C941 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-dummy.m */,
+				01C19B9D0C23AF6D8D646B480346B0CA /* Pods-Plugin-Mesh-LumenAVMeshPlugin-Info.plist */,
+				C068F00BEDA63A6A051EFA467B8BAC59 /* Pods-Plugin-Mesh-LumenAVMeshPlugin-umbrella.h */,
+				9D1A675AFAA74995E3A9396B52F2F694 /* Pods-Plugin-Mesh-LumenAVMeshPlugin.debug.xcconfig */,
+				1B3D5AAE60911AFB3C7E016B61267E73 /* Pods-Plugin-Mesh-LumenAVMeshPlugin.release.xcconfig */,
+			);
+			name = "Pods-Plugin-Mesh-LumenAVMeshPlugin";
+			path = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPlugin";
+			sourceTree = "<group>";
+		};
+		31FAAE5F78B5246712EFE29CEC889477 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				702834628CA6E6A7CB6CCF5EFE1267A8 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.modulemap */,
+				9BBD4E2B7F248898C51D8E8608E7190A /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-acknowledgements.markdown */,
+				2C3194F65E068AAE81F93171E37A5369 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-acknowledgements.plist */,
+				9C1BBA9E118856CA86AFBFE90DE2A91F /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-dummy.m */,
+				ED4115CD73DE3B2F2319B370F524DD7E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-Info.plist */,
+				8BE08DC869D186FE9C13C380173A543E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-umbrella.h */,
+				BC8F2199DB55EACC86B2DB948C515A8E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.debug.xcconfig */,
+				38C86DF5FD1D09ABEB4C601EA4076D80 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.release.xcconfig */,
+			);
+			name = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin";
+			path = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin";
+			sourceTree = "<group>";
+		};
+		343370BF8CE3298FAFF55DCF5641CB08 /* LumenOrchestratorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A94745CA02542302891AAFBF0D63CD5C /* Frameworks */,
+				58732F7B4F73D072ED9F984B4A3FE92B /* Support Files */,
+			);
+			name = LumenOrchestratorSDK;
+			path = LumenOrchestratorSDK;
+			sourceTree = "<group>";
+		};
+		572A7B1D0E43305A69C2372A7D936E0E /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests */ = {
+			isa = PBXGroup;
+			children = (
+				82E8B58FF926F5A6A0D5128F4751E475 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.modulemap */,
+				33894012C1EBE9AFE499FD81E3E1798A /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-acknowledgements.markdown */,
+				CDEC9CA572955D93129E0F190EFE408F /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-acknowledgements.plist */,
+				5BB19748B4FBBB9D52C1D61546A3C569 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-dummy.m */,
+				336181A26DF73507BC4ABEF938768159 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-frameworks.sh */,
+				F30686D215D2C362A8446CF87E8DF154 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-Info.plist */,
+				A69336FC83C3DC792638D8059B57F174 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-umbrella.h */,
+				CD4DD5D0F540BD73467658E33BD3F350 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.debug.xcconfig */,
+				D0EDEEE08DBFEF85D1B0B637B02C269C /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.release.xcconfig */,
+			);
+			name = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests";
+			path = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests";
+			sourceTree = "<group>";
+		};
+		58732F7B4F73D072ED9F984B4A3FE92B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C861E454B64BDFD5AE2AC8DE6374652F /* LumenOrchestratorSDK-iOS-copy-dsyms.sh */,
+				E151EE87016CECC9C523B32EA8FA7CFC /* LumenOrchestratorSDK-iOS.debug.xcconfig */,
+				B610A4BFDEE9941257A1DFC1C817C55F /* LumenOrchestratorSDK-iOS.release.xcconfig */,
+				8A60E5121B05165ADC785E42E248A8E6 /* LumenOrchestratorSDK-tvOS-copy-dsyms.sh */,
+				31F6C744D6198ED702818ED7049124FE /* LumenOrchestratorSDK-tvOS.debug.xcconfig */,
+				132EBC9B2479FF6D302CCCCF65EFB03A /* LumenOrchestratorSDK-tvOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LumenOrchestratorSDK-iOS";
+			sourceTree = "<group>";
+		};
+		66ED41B85837F1ADDE9FB29EB710A007 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				E53DAB7061E1E26D7C2970F3B6E8A6FF /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.modulemap */,
+				1ECB5D76501E4F7649822EF1C1DB8098 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-acknowledgements.markdown */,
+				CA302558DABF639D74C3FB725E174055 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-acknowledgements.plist */,
+				28081E42FA22FFEF11879BCBB9EAD592 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-dummy.m */,
+				B692675FC36B77412809B9554AD55CB3 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-frameworks.sh */,
+				05A3098A33C2AE95AEA2595630CAB0FA /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-Info.plist */,
+				8B7E64F588FE44494FA8013463924766 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-umbrella.h */,
+				3DF7BDC0F1FC3D9A3DF258ADF40A9E63 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.debug.xcconfig */,
+				07A95376EC4C722C80D2E71EC3025074 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.release.xcconfig */,
+			);
+			name = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests";
+			path = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests";
+			sourceTree = "<group>";
+		};
+		7ABA22CD63E4BCCBAB933698E61D1FE3 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D31170E784698491A88BF2BDD3E23628 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.modulemap */,
+				DF7F65E0AF2D5CC31484D63BB61BCFF3 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-acknowledgements.markdown */,
+				D8E51A2AD5BFB84BA3B27AF25E69146E /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-acknowledgements.plist */,
+				8DC7983CA144753C92B1ED55737C8BA7 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-dummy.m */,
+				7754DBF43CDF607891ACB53B12DAEB6B /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-frameworks.sh */,
+				3086095E5CDEA3EB27C8A22A8603EBCF /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-Info.plist */,
+				259914C15E52101681DB1331BEE3D663 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-umbrella.h */,
+				F2584D76C150B092DA0A9561E1042684 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.debug.xcconfig */,
+				8EEFD0A6BA1D886C64D0C23AEF1F87FE /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.release.xcconfig */,
+			);
+			name = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo";
+			path = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo";
+			sourceTree = "<group>";
+		};
+		7B0389C43D7757B96A51B4C2E5F8EA9C /* Pods-DemoApp-Mesh-AVPlayerMeshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				253AB0BEBBF8A9F54D0523432E92DF80 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo.modulemap */,
+				09613E08D0C64D3A7C133ACF68B3768C /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-acknowledgements.markdown */,
+				652ABAD95E9BE52149AA0D56FD27610A /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-acknowledgements.plist */,
+				03A5F2B5FB9C2241670C3B72AAB1AC45 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-dummy.m */,
+				04EFDE62B1AD20087553EF6E91355357 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-frameworks.sh */,
+				38C51834616BC0025D4C64C956238538 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-Info.plist */,
+				86221D0637FE5F67FE022E03C67705AE /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-umbrella.h */,
+				9DF0A1A91F0ECAFC87AC842A5BCECDA2 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo.debug.xcconfig */,
+				81E03DF93F4A3222DC589E59BBFECD3A /* Pods-DemoApp-Mesh-AVPlayerMeshDemo.release.xcconfig */,
+			);
+			name = "Pods-DemoApp-Mesh-AVPlayerMeshDemo";
+			path = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemo";
+			sourceTree = "<group>";
+		};
+		7BA426A61ECDB18091804837513E216F /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				862ADB3E8E3DC6FD921084C65D936619 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		80B19D59CFF864C4DAB64EF31ABDA829 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV */ = {
+			isa = PBXGroup;
+			children = (
+				BA3CB1E5D091CEEA45DAB76C0D738801 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.modulemap */,
+				8C2DB2AD80C2200393F5DB1ADB98BB0E /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-acknowledgements.markdown */,
+				DE24A1A804C1C6BCFA7FCCC2899E79A1 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-acknowledgements.plist */,
+				3180CC2702C2A57C7612A033D880E053 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-dummy.m */,
+				DB0323927659E83B51EEDA40DDCB5191 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-frameworks.sh */,
+				7FB205531636A2CD7D36379BFB68A070 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-Info.plist */,
+				2F508551596680013D568CE6CCD505A2 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-umbrella.h */,
+				C36DBE1EC94D89F91BAF534A49BDE7AB /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.debug.xcconfig */,
+				2E5C1CAAB73780FDB0A685FBEF5A3BD7 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.release.xcconfig */,
+			);
+			name = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV";
+			path = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV";
+			sourceTree = "<group>";
+		};
+		8910DE18F4068EE7F2F8E36E5101A369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A19B97BA9DB17ACAB60CC4FA3D6A30 /* iOS */,
+				7BA426A61ECDB18091804837513E216F /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7680038D57717F4A1F1F54639C2E0BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EB031BE0527984A0BD996C2C6E5238E /* LumenMeshSDK.framework */,
+				4ADA0CC8FBC4B330E203372ECF8BB023 /* LumenMeshSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A94745CA02542302891AAFBF0D63CD5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35C7827E974AB8FD9E49C0F5FB008D1E /* LumenOrchestratorSDK.framework */,
+				DF53A1565B4892B14CE402273DF1B6D6 /* LumenOrchestratorSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7275FD9EF589A6CEB611AB24BF7BAFB /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV */ = {
+			isa = PBXGroup;
+			children = (
+				B0E4DC66C98D937827CFE03BF7FFBD76 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.modulemap */,
+				1E8A162B093F31F6B783CF4E2597721D /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-acknowledgements.markdown */,
+				C9FFD559E0D109A80D43BE3796EE864E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-acknowledgements.plist */,
+				FDD96C5AB6B920907982527D9DE31B2D /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-dummy.m */,
+				F8904717AFBBFE44B4BD1BA50FBB28C9 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-Info.plist */,
+				724B242C078AB71CB8C899F7121317A2 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-umbrella.h */,
+				19E9DBE7B430AD2D4CDCFA6DF6123D52 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.debug.xcconfig */,
+				015842D497734A3471D4024737DAF144 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.release.xcconfig */,
+			);
+			name = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV";
+			path = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV";
+			sourceTree = "<group>";
+		};
+		BB0138AA727B00DF1272FB5A723C6FF2 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV */ = {
+			isa = PBXGroup;
+			children = (
+				3CF4C7B5AE4EEC64EAA610568C6E1B9D /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.modulemap */,
+				1B5D1D9805314673AEC8662D2789C0B0 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-acknowledgements.markdown */,
+				CE4DCD8BD850C779C59C9E6EEEF5C2E7 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-acknowledgements.plist */,
+				FD7938D605E9D48BEBE951C1D005C527 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-dummy.m */,
+				7B41740D7CED326EF5DBF1ED634DD90B /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-Info.plist */,
+				0D2E75DE58E4395293DBF41A4574E025 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-umbrella.h */,
+				B92ECDB694272984101452E85EB440EE /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.debug.xcconfig */,
+				B7310F0DBC3A764CCDC7AE503C15C14C /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.release.xcconfig */,
+			);
+			name = "Pods-Plugin-Mesh-LumenAVMeshPluginTV";
+			path = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPluginTV";
+			sourceTree = "<group>";
+		};
+		BBCF35C37700721B3A0212E468B71AAF /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV */ = {
+			isa = PBXGroup;
+			children = (
+				77DDE74037DA023952022B178901A5FE /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.modulemap */,
+				B033F8A50B8C23A990F7F3D745A7D2D6 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-acknowledgements.markdown */,
+				2224807EBEE3942DC5B14DB6E3A7886E /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-acknowledgements.plist */,
+				54BC900EF46469AF0061375D3A608A29 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-dummy.m */,
+				4EFE5263125EC3A86157C6A34AF82EF9 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-frameworks.sh */,
+				9AD196F039D72DA309846F6EF1DA44FF /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-Info.plist */,
+				84CCE8BDE584B59F981B2A7A491199D6 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-umbrella.h */,
+				B0386FA36EABFE532D69A74612DF1053 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.debug.xcconfig */,
+				B9F625153E4E39CAAF0BD83DD7A6A7D8 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.release.xcconfig */,
+			);
+			name = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV";
+			path = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV";
+			sourceTree = "<group>";
+		};
+		BBFE2B7752486F6025CA953EB01860A9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B0389C43D7757B96A51B4C2E5F8EA9C /* Pods-DemoApp-Mesh-AVPlayerMeshDemo */,
+				80B19D59CFF864C4DAB64EF31ABDA829 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV */,
+				7ABA22CD63E4BCCBAB933698E61D1FE3 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo */,
+				BBCF35C37700721B3A0212E468B71AAF /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV */,
+				0355AB9D7D112908B8D616A0B2C3896A /* Pods-Plugin-Mesh-LumenAVMeshPlugin */,
+				BB0138AA727B00DF1272FB5A723C6FF2 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV */,
+				31FAAE5F78B5246712EFE29CEC889477 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin */,
+				B7275FD9EF589A6CEB611AB24BF7BAFB /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV */,
+				E6174CDCD678EEFA67264D46A04E12A4 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests */,
+				66ED41B85837F1ADDE9FB29EB710A007 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests */,
+				572A7B1D0E43305A69C2372A7D936E0E /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests */,
+				EBB687BD928540192E84C43E3BA291AD /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BE3F1DD374A75DC6CCD108798F53D0C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F14D0912C4C761817A7B1C8A7DF2B453 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo */,
+				647AB7AED9E15544F4232DF6EA531572 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV */,
+				BF6426732A33929A4CB1A4DDB64FCF56 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo */,
+				12C46ABCB8C28775696A149771B64D1F /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV */,
+				AE29B0E481E912BA3741AA9B87780168 /* Pods-Plugin-Mesh-LumenAVMeshPlugin */,
+				44370F5C772DD8115701D27C9798D422 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV */,
+				434ADAD6C306AE0A884A41490ED3D8E0 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin */,
+				C5452999DD1334C9B23415FFF7116EB5 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV */,
+				47C537423A8B4ADB93855CE5468EE8A0 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests */,
+				4D66D4C10A34DE10043240667F86BC83 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests */,
+				509C08D4322E42769D2030AF95EEF916 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests */,
+				4DC413BB369D118FDCEAFF734C434F3A /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0A19B97BA9DB17ACAB60CC4FA3D6A30 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54E1F74047CAE9009037AFF5FCE00AF8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C858A64A0D614318485384C3BFB86616 /* LumenMeshSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A7680038D57717F4A1F1F54639C2E0BA /* Frameworks */,
+				E10535095145A10D75147CFDAD2A8A4D /* Support Files */,
+			);
+			name = LumenMeshSDK;
+			path = LumenMeshSDK;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8910DE18F4068EE7F2F8E36E5101A369 /* Frameworks */,
+				ED1DA01D94E43131E50859787368999A /* Pods */,
+				BE3F1DD374A75DC6CCD108798F53D0C7 /* Products */,
+				BBFE2B7752486F6025CA953EB01860A9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E10535095145A10D75147CFDAD2A8A4D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D393DFCFD58E7D0731C8B505AEFB26AE /* LumenMeshSDK-iOS-copy-dsyms.sh */,
+				DF681EF369AE2B4CEAF07AF8BF27E728 /* LumenMeshSDK-iOS.debug.xcconfig */,
+				8A4742E6F9A838BC4B2A6B8B52AB5203 /* LumenMeshSDK-iOS.release.xcconfig */,
+				E90E10C43818AABC7B06FE2FE203306B /* LumenMeshSDK-tvOS-copy-dsyms.sh */,
+				BF9406C601DB652A0429CA2AC3850294 /* LumenMeshSDK-tvOS.debug.xcconfig */,
+				55747E5102E8921E3243292B03A52027 /* LumenMeshSDK-tvOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LumenMeshSDK-iOS";
+			sourceTree = "<group>";
+		};
+		E6174CDCD678EEFA67264D46A04E12A4 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B30309BEB3DEECFC0AB9DCED47B31BE /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.modulemap */,
+				EEE6558B6581EB7FC37AADDD003C2928 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-acknowledgements.markdown */,
+				F881818D02092AEC447316E20AAF2AC9 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-acknowledgements.plist */,
+				D683D15A80D9026EC1958009670D350B /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-dummy.m */,
+				698B0950ACABF1E37D90821E3BB9712D /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-frameworks.sh */,
+				2CBDD7B60C1A461B9D784E25A87A2178 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-Info.plist */,
+				B569042B85E57068096B4E42FEF008BB /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-umbrella.h */,
+				9F7EF8776BC1270EA91AE01F782FBC89 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.debug.xcconfig */,
+				DB34AF76E12D7161265D7B9BA316EF87 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.release.xcconfig */,
+			);
+			name = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests";
+			path = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTests";
+			sourceTree = "<group>";
+		};
+		EBB687BD928540192E84C43E3BA291AD /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC724033ADCE6DDCF282CF62C970D1F0 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.modulemap */,
+				686B3038BEA43B0F5515AA094EC8C5FB /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-acknowledgements.markdown */,
+				9F6BCD4A7430398504E34844B6A29862 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-acknowledgements.plist */,
+				2B0EEDCA5043078C878FA5A220601B96 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-dummy.m */,
+				B808B862C24416BCD9B7C53EC3FEF6C2 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-frameworks.sh */,
+				923282659329B338E94DCFCBBE4B7FDE /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-Info.plist */,
+				05582B97B2C333033A8E8A57B89AB4A9 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-umbrella.h */,
+				3A8741B79A4DFF08CEE657A75C4FC537 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.debug.xcconfig */,
+				8741F8361E4F77322224FCA429F04076 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.release.xcconfig */,
+			);
+			name = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests";
+			path = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests";
+			sourceTree = "<group>";
+		};
+		ED1DA01D94E43131E50859787368999A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C858A64A0D614318485384C3BFB86616 /* LumenMeshSDK */,
+				343370BF8CE3298FAFF55DCF5641CB08 /* LumenOrchestratorSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		237D2C86F5C634D6451205B927E29784 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA416D71127C93CF923000D250D43586 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5BAAF1020A2505C5134A209E78BE3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3BEA53C5E83F2FCCD2837504184BB1 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37911949E11DF8E066A4D1C2DFA76FC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D52C8A5C44143C5ED26D21CB745EC2 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC1361C05E70BBE423B895B0109B0A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AF867E9B33DDDF12C13552A45F0C860 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FAB1AB8F60BE0F1902C8A010C7A11E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64ACB54CE43535F4A699E826BA0CCA1B /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625C60A5AEF30E828644859CBFB0F89F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F788B3DEC62DB90BD90A24E61EDD6849 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		628CB410CA82358C6FE640AC37C09F53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D202721459CCD5CE15F26180326A29D8 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E8BB7DA14F86FA1130EA1E608DE94D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447D0C8E3229EA8145A4A3D56D93D8AD /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC4BE5A410A6C6B8425863FFEF451B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03CCF4A7CFF933A5A081C296559560A /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED691C97D9379696569C3A99E514E48B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C54784EA65D043A8A3F035F0E36022 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDB57F4D038556BFB3FDA2B631A3688 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACCC7C458CDA577DB6424F1FB39B31E /* Pods-Plugin-Mesh-LumenAVMeshPlugin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB36B89A67B3486E949A044629CCD76E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BF62B439F40C3A55AD620416ED8026 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		064D9EE3AF9982800DA122B5F2312498 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0048936CD046E5ABAD9D4DA423DEA7D7 /* Build configuration list for PBXNativeTarget "Pods-Plugin-Mesh-LumenAVMeshPluginTV" */;
+			buildPhases = (
+				5FAB1AB8F60BE0F1902C8A010C7A11E9 /* Headers */,
+				5938765E3951ED823D3E2D46A69F5818 /* Sources */,
+				7EB595140199C008A058F52AC952CAFC /* Frameworks */,
+				79B70D492D57015E2B338DC8B0BACFA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				308B326445AE5DC03CB11C8D79A6A608 /* PBXTargetDependency */,
+			);
+			name = "Pods-Plugin-Mesh-LumenAVMeshPluginTV";
+			productName = Pods_Plugin_Mesh_LumenAVMeshPluginTV;
+			productReference = 44370F5C772DD8115701D27C9798D422 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV */;
+			productType = "com.apple.product-type.framework";
+		};
+		3A9ED786376C22A1A52F59D865691D67 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0096464F64F1D9F5B5B079DF7C244990 /* Build configuration list for PBXNativeTarget "Pods-DemoApp-Mesh-AVPlayerMeshDemo" */;
+			buildPhases = (
+				4AC1361C05E70BBE423B895B0109B0A2 /* Headers */,
+				DAC5DC12719726CE64FDF9F4E44A66D3 /* Sources */,
+				1A5C68BB4D2EEEB51208F534AAA92329 /* Frameworks */,
+				19E587BC334B57D083C2F2C4D2028D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E698ADAD70C6C4767ADA07E062417283 /* PBXTargetDependency */,
+			);
+			name = "Pods-DemoApp-Mesh-AVPlayerMeshDemo";
+			productName = Pods_DemoApp_Mesh_AVPlayerMeshDemo;
+			productReference = F14D0912C4C761817A7B1C8A7DF2B453 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E261C318BA3F1F83A05D93269FAE595 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E29A40A31C0D258BD53D69B797DA4D /* Build configuration list for PBXNativeTarget "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests" */;
+			buildPhases = (
+				C7E8BB7DA14F86FA1130EA1E608DE94D /* Headers */,
+				8F44A59D12E0F12CDF951C102EDF791F /* Sources */,
+				16D98134B98E5AAE785479147662D2E0 /* Frameworks */,
+				D1684F64CD665390D02BCB5DFA3F68D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E35476C422534A649A97B2C5C7325669 /* PBXTargetDependency */,
+			);
+			name = "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests";
+			productName = Pods_Plugin_PluginTests_LumenAVMeshPluginTVTests;
+			productReference = 4D66D4C10A34DE10043240667F86BC83 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		40C05DD1370FD91ABED935E367FBD899 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5917409402DFC4D8A2A970FE5A0158 /* Build configuration list for PBXNativeTarget "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV" */;
+			buildPhases = (
+				628CB410CA82358C6FE640AC37C09F53 /* Headers */,
+				0D12DC79D444ADF382A906A7C091C1B6 /* Sources */,
+				1194DD30F5F9DCE57B9C431F7C6B328B /* Frameworks */,
+				9390A68118F14FE83B48ECD5B8592343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6B917AF986BA294CBDB9578C9E52D6B /* PBXTargetDependency */,
+			);
+			name = "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV";
+			productName = Pods_DemoApp_Mesh_AVPlayerMeshDemoTV;
+			productReference = 647AB7AED9E15544F4232DF6EA531572 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV */;
+			productType = "com.apple.product-type.framework";
+		};
+		512D00694FA63B929F24DAA5306A0024 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5375DBAE3B3DFC87337C04EC7BF4302F /* Build configuration list for PBXNativeTarget "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo" */;
+			buildPhases = (
+				ED691C97D9379696569C3A99E514E48B /* Headers */,
+				32080360C4CA9F0208F5D8E3C77ABF75 /* Sources */,
+				BA26DD7B0562FD9D2D7A74AD4E7369F4 /* Frameworks */,
+				05C5F9942C5B886D3078C352BB144F8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B5982CD3669123C5A43A3E91E9DE6DE /* PBXTargetDependency */,
+			);
+			name = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo";
+			productName = Pods_DemoApp_Orchestrator_AVPlayerOrchestratorDemo;
+			productReference = BF6426732A33929A4CB1A4DDB64FCF56 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C0B253DC197B19F51EF4C1BD44A62D9 /* Pods-Plugin-Mesh-LumenAVMeshPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40F5F12BB309284564B5E05497D658F6 /* Build configuration list for PBXNativeTarget "Pods-Plugin-Mesh-LumenAVMeshPlugin" */;
+			buildPhases = (
+				EDDB57F4D038556BFB3FDA2B631A3688 /* Headers */,
+				90879EF63E4EF154B7AF209B73C9E15A /* Sources */,
+				FD386D2AFBC840906BEF27F58B31CCFD /* Frameworks */,
+				C34848D9EFB14B16B53AF2D645C555D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				639140098D3D70E89DB7A41A8171A8C8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Plugin-Mesh-LumenAVMeshPlugin";
+			productName = Pods_Plugin_Mesh_LumenAVMeshPlugin;
+			productReference = AE29B0E481E912BA3741AA9B87780168 /* Pods-Plugin-Mesh-LumenAVMeshPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F6D009205A543A0DE320241E1EC2296 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF0235876A75CBB0799183F1A18A3E92 /* Build configuration list for PBXNativeTarget "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin" */;
+			buildPhases = (
+				37911949E11DF8E066A4D1C2DFA76FC3 /* Headers */,
+				EBB9B13C8AA90D379D657DA210C92747 /* Sources */,
+				D58E0B23F8C8F3D5C1DD0A76F31BAE9C /* Frameworks */,
+				3105CEA7B5B459D20E91CBA1DB720265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				410F2F6EEEDDB257A8390444CA12130C /* PBXTargetDependency */,
+			);
+			name = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin";
+			productName = Pods_Plugin_Orchestrator_LumenAVOrchestratorPlugin;
+			productReference = 434ADAD6C306AE0A884A41490ED3D8E0 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin */;
+			productType = "com.apple.product-type.framework";
+		};
+		750FF83D074419F63D194CFB098F6995 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99E6193094443DCE9D018D6D907DEC65 /* Build configuration list for PBXNativeTarget "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV" */;
+			buildPhases = (
+				625C60A5AEF30E828644859CBFB0F89F /* Headers */,
+				B4CFC2B2EA9D122744A4A6307453E8CF /* Sources */,
+				6049CFB7403D562A047A1A0045E9163A /* Frameworks */,
+				AB96BE1D060A44F566B699A59B1E258E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				033CEF077178A2CBAA350AD24F6F95C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV";
+			productName = Pods_Plugin_Orchestrator_LumenAVOrchestratorPluginTV;
+			productReference = C5452999DD1334C9B23415FFF7116EB5 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F1818C7EEADABCF81DF612F6219BC2B /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CD9BCCFAC8F0778CED345321E5A3A3 /* Build configuration list for PBXNativeTarget "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests" */;
+			buildPhases = (
+				CCC4BE5A410A6C6B8425863FFEF451B6 /* Headers */,
+				7DFD1E493DA5C3F0FE5521C6D1181F5C /* Sources */,
+				290CFE397DD1ECD5AB093D2B579BEFBC /* Frameworks */,
+				2E25B17BEB68AA83736A9237F77095F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				719B1C60FCFCFAF0BB5313E06F785201 /* PBXTargetDependency */,
+			);
+			name = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests";
+			productName = Pods_Plugin_PluginTests_LumenAVOrchestratorPluginTVTests;
+			productReference = 4DC413BB369D118FDCEAFF734C434F3A /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8D7E6F79BD96DB24FEB3FA403F8C3DB /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F111A46E067258DF199619057CA30F7A /* Build configuration list for PBXNativeTarget "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV" */;
+			buildPhases = (
+				FB36B89A67B3486E949A044629CCD76E /* Headers */,
+				FE4FF98460D4543ECD3BDB9DDB73CDBC /* Sources */,
+				666C021BD8E9E9B32097F5DB2122AE27 /* Frameworks */,
+				7A8B32C811E398D066CB4232C22F2865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00CABDB8E03734F3D886A697DB80BD18 /* PBXTargetDependency */,
+			);
+			name = "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV";
+			productName = Pods_DemoApp_Orchestrator_AVPlayerOrchestratorDemoTV;
+			productReference = 12C46ABCB8C28775696A149771B64D1F /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV */;
+			productType = "com.apple.product-type.framework";
+		};
+		C62F4B67D0F722896F3D1FF152AA4406 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61CA7BE06462FA52F562A51EB0B50621 /* Build configuration list for PBXNativeTarget "Pods-Plugin-PluginTests-LumenAVMeshPluginTests" */;
+			buildPhases = (
+				237D2C86F5C634D6451205B927E29784 /* Headers */,
+				B36C0929E8B73104F8FDD17582906A61 /* Sources */,
+				2232DB20135D670FCB7D5DB6C6A1551A /* Frameworks */,
+				9D084BE6E88044534CCB339DFF5CF83E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F22AF28780B6E12CC23C747046196A9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Plugin-PluginTests-LumenAVMeshPluginTests";
+			productName = Pods_Plugin_PluginTests_LumenAVMeshPluginTests;
+			productReference = 47C537423A8B4ADB93855CE5468EE8A0 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D537BC7CB6038F96A5484D837145C2BD /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B906BFF1130DE34FB9E8BDE34B3D2C /* Build configuration list for PBXNativeTarget "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests" */;
+			buildPhases = (
+				2F5BAAF1020A2505C5134A209E78BE3C /* Headers */,
+				138B1CF3527F8D91E7F6F77650622A2A /* Sources */,
+				AD0440984ADA0CF385228620D1C167F2 /* Frameworks */,
+				076AD5650DA05B433F124F5841A741DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C573D1E5C6A736B6CB4187CBE7433666 /* PBXTargetDependency */,
+			);
+			name = "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests";
+			productName = Pods_Plugin_PluginTests_LumenAVOrchestratorPluginTests;
+			productReference = 509C08D4322E42769D2030AF95EEF916 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BE3F1DD374A75DC6CCD108798F53D0C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D9C704864E320986214A866B26B5271 /* LumenMeshSDK-iOS */,
+				443F31BD4702BD96D90E86160F9A476D /* LumenMeshSDK-tvOS */,
+				5951C0F62A73160F9662EE8840693096 /* LumenOrchestratorSDK-iOS */,
+				0F935ADA5B46A4C39867943C9044AAAA /* LumenOrchestratorSDK-tvOS */,
+				3A9ED786376C22A1A52F59D865691D67 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo */,
+				40C05DD1370FD91ABED935E367FBD899 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV */,
+				512D00694FA63B929F24DAA5306A0024 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo */,
+				B8D7E6F79BD96DB24FEB3FA403F8C3DB /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV */,
+				6C0B253DC197B19F51EF4C1BD44A62D9 /* Pods-Plugin-Mesh-LumenAVMeshPlugin */,
+				064D9EE3AF9982800DA122B5F2312498 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV */,
+				6F6D009205A543A0DE320241E1EC2296 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin */,
+				750FF83D074419F63D194CFB098F6995 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV */,
+				C62F4B67D0F722896F3D1FF152AA4406 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests */,
+				3E261C318BA3F1F83A05D93269FAE595 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests */,
+				D537BC7CB6038F96A5484D837145C2BD /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests */,
+				8F1818C7EEADABCF81DF612F6219BC2B /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05C5F9942C5B886D3078C352BB144F8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		076AD5650DA05B433F124F5841A741DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19E587BC334B57D083C2F2C4D2028D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E25B17BEB68AA83736A9237F77095F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3105CEA7B5B459D20E91CBA1DB720265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79B70D492D57015E2B338DC8B0BACFA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A8B32C811E398D066CB4232C22F2865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9390A68118F14FE83B48ECD5B8592343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D084BE6E88044534CCB339DFF5CF83E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB96BE1D060A44F566B699A59B1E258E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34848D9EFB14B16B53AF2D645C555D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1684F64CD665390D02BCB5DFA3F68D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71A977D9A06B6FC38611659F71B3FF8E /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LumenOrchestratorSDK-iOS/LumenOrchestratorSDK-iOS-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LumenOrchestratorSDK-iOS/LumenOrchestratorSDK-iOS-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/LumenOrchestratorSDK-iOS/LumenOrchestratorSDK-iOS-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A912C3931985107554133F3E82362EFC /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LumenMeshSDK-iOS/LumenMeshSDK-iOS-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LumenMeshSDK-iOS/LumenMeshSDK-iOS-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/LumenMeshSDK-iOS/LumenMeshSDK-iOS-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D263C719B1A34B5C79D40D021B065836 /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LumenMeshSDK-tvOS/LumenMeshSDK-tvOS-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LumenMeshSDK-tvOS/LumenMeshSDK-tvOS-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/LumenMeshSDK-tvOS/LumenMeshSDK-tvOS-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FF40F0960B8D804E3169D38BBD9C1E /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LumenOrchestratorSDK-tvOS/LumenOrchestratorSDK-tvOS-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LumenOrchestratorSDK-tvOS/LumenOrchestratorSDK-tvOS-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/LumenOrchestratorSDK-tvOS/LumenOrchestratorSDK-tvOS-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D12DC79D444ADF382A906A7C091C1B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8E1CE316B007B6D68175E9B7485BF9 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138B1CF3527F8D91E7F6F77650622A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE5658A244A89E986E4EC65890B62EB /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32080360C4CA9F0208F5D8E3C77ABF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3542167EEBEDE2CBE0E2EE8C035C6A06 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5938765E3951ED823D3E2D46A69F5818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF2B654F3E3C5AE437AE9C09FFF5D27 /* Pods-Plugin-Mesh-LumenAVMeshPluginTV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DFD1E493DA5C3F0FE5521C6D1181F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE3BCCBCA3312B22B70A159B5A5A1A6 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F44A59D12E0F12CDF951C102EDF791F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D06D57B132D2F485E4E1E67C19D11F8 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90879EF63E4EF154B7AF209B73C9E15A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA82A4796A3C9C4A2C535D6C0FB1BE1B /* Pods-Plugin-Mesh-LumenAVMeshPlugin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36C0929E8B73104F8FDD17582906A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9636B8D345D547DA00F2C5E30153E308 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CFC2B2EA9D122744A4A6307453E8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D622C481DECFF3E591E3023B205659D2 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC5DC12719726CE64FDF9F4E44A66D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA20F04E8F044622027243C3034937A /* Pods-DemoApp-Mesh-AVPlayerMeshDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB9B13C8AA90D379D657DA210C92747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B79BA116FF3BFE79F657A6C0EF290AB /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4FF98460D4543ECD3BDB9DDB73CDBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A6FAFAFA984E4A209ABD9677B91792 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00CABDB8E03734F3D886A697DB80BD18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenOrchestratorSDK-tvOS";
+			target = 0F935ADA5B46A4C39867943C9044AAAA /* LumenOrchestratorSDK-tvOS */;
+			targetProxy = 69435CE521ECC323D2E300A306D602BE /* PBXContainerItemProxy */;
+		};
+		033CEF077178A2CBAA350AD24F6F95C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenOrchestratorSDK-tvOS";
+			target = 0F935ADA5B46A4C39867943C9044AAAA /* LumenOrchestratorSDK-tvOS */;
+			targetProxy = 69CDD9EA0C6925A3CF06EDB5592532CF /* PBXContainerItemProxy */;
+		};
+		308B326445AE5DC03CB11C8D79A6A608 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenMeshSDK-tvOS";
+			target = 443F31BD4702BD96D90E86160F9A476D /* LumenMeshSDK-tvOS */;
+			targetProxy = 89E8816860C2870F79827BAE8F9AE3BD /* PBXContainerItemProxy */;
+		};
+		410F2F6EEEDDB257A8390444CA12130C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenOrchestratorSDK-iOS";
+			target = 5951C0F62A73160F9662EE8840693096 /* LumenOrchestratorSDK-iOS */;
+			targetProxy = 564A7ED96F27BCCF4E8F7E35CF084ACB /* PBXContainerItemProxy */;
+		};
+		639140098D3D70E89DB7A41A8171A8C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenMeshSDK-iOS";
+			target = 7D9C704864E320986214A866B26B5271 /* LumenMeshSDK-iOS */;
+			targetProxy = 0068E5DD310CB6A4FE223193D0A8CE6E /* PBXContainerItemProxy */;
+		};
+		6B5982CD3669123C5A43A3E91E9DE6DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenOrchestratorSDK-iOS";
+			target = 5951C0F62A73160F9662EE8840693096 /* LumenOrchestratorSDK-iOS */;
+			targetProxy = 635A834312A7936FF402768087135D36 /* PBXContainerItemProxy */;
+		};
+		719B1C60FCFCFAF0BB5313E06F785201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenOrchestratorSDK-tvOS";
+			target = 0F935ADA5B46A4C39867943C9044AAAA /* LumenOrchestratorSDK-tvOS */;
+			targetProxy = E5C63A1415CA1F4BB3E404982DD36A35 /* PBXContainerItemProxy */;
+		};
+		7F22AF28780B6E12CC23C747046196A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenMeshSDK-iOS";
+			target = 7D9C704864E320986214A866B26B5271 /* LumenMeshSDK-iOS */;
+			targetProxy = C0F58C59AB8C2EC28958C70F684138C5 /* PBXContainerItemProxy */;
+		};
+		C573D1E5C6A736B6CB4187CBE7433666 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenOrchestratorSDK-iOS";
+			target = 5951C0F62A73160F9662EE8840693096 /* LumenOrchestratorSDK-iOS */;
+			targetProxy = F9B709B95062F094AF9EA7124B2B9837 /* PBXContainerItemProxy */;
+		};
+		C6B917AF986BA294CBDB9578C9E52D6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenMeshSDK-tvOS";
+			target = 443F31BD4702BD96D90E86160F9A476D /* LumenMeshSDK-tvOS */;
+			targetProxy = 57BE845E340CC750C338AABA0FC7CBC2 /* PBXContainerItemProxy */;
+		};
+		E35476C422534A649A97B2C5C7325669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenMeshSDK-tvOS";
+			target = 443F31BD4702BD96D90E86160F9A476D /* LumenMeshSDK-tvOS */;
+			targetProxy = 9D4AAC46161B0A53463F6158219A397E /* PBXContainerItemProxy */;
+		};
+		E698ADAD70C6C4767ADA07E062417283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LumenMeshSDK-iOS";
+			target = 7D9C704864E320986214A866B26B5271 /* LumenMeshSDK-iOS */;
+			targetProxy = C856BF93DE9877455E02805BCD1E38C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156776FCD000677EA7361D5A3D8BFCEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E03DF93F4A3222DC589E59BBFECD3A /* Pods-DemoApp-Mesh-AVPlayerMeshDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemo/Pods-DemoApp-Mesh-AVPlayerMeshDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemo/Pods-DemoApp-Mesh-AVPlayerMeshDemo.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1628E555A2DB5F8A9E577F118740AB2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7310F0DBC3A764CCDC7AE503C15C14C /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPluginTV/Pods-Plugin-Mesh-LumenAVMeshPluginTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPluginTV/Pods-Plugin-Mesh-LumenAVMeshPluginTV.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		187FA4AB6ECCAB852E326B932C26FC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF7BDC0F1FC3D9A3DF258ADF40A9E63 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1DC996E9F602453D0C4E6605A3A511ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8741F8361E4F77322224FCA429F04076 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F6E6AD972AE7AAE7686F603BE3D265E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A95376EC4C722C80D2E71EC3025074 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22C16084F6B6D94BC6B43797A0CD7A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E9DBE7B430AD2D4CDCFA6DF6123D52 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2343C73BB4C673FD82B0F0752664F1B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E151EE87016CECC9C523B32EA8FA7CFC /* LumenOrchestratorSDK-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26D4E59F61633FD9CA7EE310B841A3AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0386FA36EABFE532D69A74612DF1053 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		279D3ACDC4D221D77104650A5DEB0C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F6C744D6198ED702818ED7049124FE /* LumenOrchestratorSDK-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		2EDE8169E29D7C0F2FF337ADF70642A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DF0A1A91F0ECAFC87AC842A5BCECDA2 /* Pods-DemoApp-Mesh-AVPlayerMeshDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemo/Pods-DemoApp-Mesh-AVPlayerMeshDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemo/Pods-DemoApp-Mesh-AVPlayerMeshDemo.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35E027F669A8246C4F7752F7BEB2E906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F625153E4E39CAAF0BD83DD7A6A7D8 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3618B24766F91085E9FD2D7F4E2A1192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1A675AFAA74995E3A9396B52F2F694 /* Pods-Plugin-Mesh-LumenAVMeshPlugin.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPlugin/Pods-Plugin-Mesh-LumenAVMeshPlugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPlugin/Pods-Plugin-Mesh-LumenAVMeshPlugin.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42E1E280B346F212067427F4F2415914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EEFD0A6BA1D886C64D0C23AEF1F87FE /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4812B1A2E4DD3ECDAF83A56AE57B0629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F7EF8776BC1270EA91AE01F782FBC89 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTests.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A9048DE93A683EBEB7EF1E0316D1946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4742E6F9A838BC4B2A6B8B52AB5203 /* LumenMeshSDK-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5054D6CD60536A561DF4E009CD09D67A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8741B79A4DFF08CEE657A75C4FC537 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52FDE36760984FFAC4B647F99417AD70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55747E5102E8921E3243292B03A52027 /* LumenMeshSDK-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E06E1D9BF4EC86B0294E6FB6C04B5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF681EF369AE2B4CEAF07AF8BF27E728 /* LumenMeshSDK-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		804CBFE28285AB6811B03B5190C4DDDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36DBE1EC94D89F91BAF534A49BDE7AB /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81724DB22A41B5013DC5D3F8D486E9E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C86DF5FD1D09ABEB4C601EA4076D80 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		881A121A0146418A60CE5016998F2299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015842D497734A3471D4024737DAF144 /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV/Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E4115D8DD4512A67D789D88CEF348FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2584D76C150B092DA0A9561E1042684 /* Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo/Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9BD94977283C2AD5CDD617F193F901D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		9CC41304151227A58814508FEA9F6AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB34AF76E12D7161265D7B9BA316EF87 /* Pods-Plugin-PluginTests-LumenAVMeshPluginTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVMeshPluginTests/Pods-Plugin-PluginTests-LumenAVMeshPluginTests.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B17E76DF332FC3085F76E2593EC8DE0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132EBC9B2479FF6D302CCCCF65EFB03A /* LumenOrchestratorSDK-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3EF51FC05199A16E796662FF90477EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0EDEEE08DBFEF85D1B0B637B02C269C /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CAB35544F604DB77FEE97E24F2F92BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4DD5D0F540BD73467658E33BD3F350 /* Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests/Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD0E56056B29D1B0DFF4CC68935587DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92ECDB694272984101452E85EB440EE /* Pods-Plugin-Mesh-LumenAVMeshPluginTV.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPluginTV/Pods-Plugin-Mesh-LumenAVMeshPluginTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPluginTV/Pods-Plugin-Mesh-LumenAVMeshPluginTV.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3CE2E4BD85CF67B765EA3212DA9E5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3D5AAE60911AFB3C7E016B61267E73 /* Pods-Plugin-Mesh-LumenAVMeshPlugin.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPlugin/Pods-Plugin-Mesh-LumenAVMeshPlugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-Mesh-LumenAVMeshPlugin/Pods-Plugin-Mesh-LumenAVMeshPlugin.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9732C777CB0ACB817F931B208CFC118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8F2199DB55EACC86B2DB948C515A8E /* Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin/Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE3A71E8A68C68B5806D9C40AE09D48F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5C1CAAB73780FDB0A685FBEF5A3BD7 /* Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV/Pods-DemoApp-Mesh-AVPlayerMeshDemoTV.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E49C7040D8A94449512F14DDBB76A790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9406C601DB652A0429CA2AC3850294 /* LumenMeshSDK-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		EBE972E4A362D3BBE5EB2F5B6B2B2C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		EE6659D57E3CFB815A9B46C6D968F3AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B610A4BFDEE9941257A1DFC1C817C55F /* LumenOrchestratorSDK-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0048936CD046E5ABAD9D4DA423DEA7D7 /* Build configuration list for PBXNativeTarget "Pods-Plugin-Mesh-LumenAVMeshPluginTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0E56056B29D1B0DFF4CC68935587DE /* Debug */,
+				1628E555A2DB5F8A9E577F118740AB2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0096464F64F1D9F5B5B079DF7C244990 /* Build configuration list for PBXNativeTarget "Pods-DemoApp-Mesh-AVPlayerMeshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDE8169E29D7C0F2FF337ADF70642A4 /* Debug */,
+				156776FCD000677EA7361D5A3D8BFCEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D87FF2401D5D3AEDFAC1A9F20EB279F /* Build configuration list for PBXAggregateTarget "LumenMeshSDK-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49C7040D8A94449512F14DDBB76A790 /* Debug */,
+				52FDE36760984FFAC4B647F99417AD70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D4A5CF6D559C2C70D109A1A2404923 /* Build configuration list for PBXAggregateTarget "LumenOrchestratorSDK-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279D3ACDC4D221D77104650A5DEB0C3F /* Debug */,
+				B17E76DF332FC3085F76E2593EC8DE0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40F5F12BB309284564B5E05497D658F6 /* Build configuration list for PBXNativeTarget "Pods-Plugin-Mesh-LumenAVMeshPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3618B24766F91085E9FD2D7F4E2A1192 /* Debug */,
+				D3CE2E4BD85CF67B765EA3212DA9E5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE972E4A362D3BBE5EB2F5B6B2B2C65 /* Debug */,
+				9BD94977283C2AD5CDD617F193F901D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5375DBAE3B3DFC87337C04EC7BF4302F /* Build configuration list for PBXNativeTarget "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4115D8DD4512A67D789D88CEF348FB /* Debug */,
+				42E1E280B346F212067427F4F2415914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EF8D6593737F86C5CF9746B49A2B583 /* Build configuration list for PBXAggregateTarget "LumenOrchestratorSDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2343C73BB4C673FD82B0F0752664F1B9 /* Debug */,
+				EE6659D57E3CFB815A9B46C6D968F3AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61CA7BE06462FA52F562A51EB0B50621 /* Build configuration list for PBXNativeTarget "Pods-Plugin-PluginTests-LumenAVMeshPluginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4812B1A2E4DD3ECDAF83A56AE57B0629 /* Debug */,
+				9CC41304151227A58814508FEA9F6AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5917409402DFC4D8A2A970FE5A0158 /* Build configuration list for PBXNativeTarget "Pods-DemoApp-Mesh-AVPlayerMeshDemoTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804CBFE28285AB6811B03B5190C4DDDC /* Debug */,
+				DE3A71E8A68C68B5806D9C40AE09D48F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71CD9BCCFAC8F0778CED345321E5A3A3 /* Build configuration list for PBXNativeTarget "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5054D6CD60536A561DF4E009CD09D67A /* Debug */,
+				1DC996E9F602453D0C4E6605A3A511ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79B906BFF1130DE34FB9E8BDE34B3D2C /* Build configuration list for PBXNativeTarget "Pods-Plugin-PluginTests-LumenAVOrchestratorPluginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB35544F604DB77FEE97E24F2F92BDC /* Debug */,
+				B3EF51FC05199A16E796662FF90477EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99E6193094443DCE9D018D6D907DEC65 /* Build configuration list for PBXNativeTarget "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C16084F6B6D94BC6B43797A0CD7A43 /* Debug */,
+				881A121A0146418A60CE5016998F2299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4E29A40A31C0D258BD53D69B797DA4D /* Build configuration list for PBXNativeTarget "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187FA4AB6ECCAB852E326B932C26FC2A /* Debug */,
+				1F6E6AD972AE7AAE7686F603BE3D265E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD6BEF56FE19E846755C904C67EEAAD1 /* Build configuration list for PBXAggregateTarget "LumenMeshSDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E06E1D9BF4EC86B0294E6FB6C04B5D6 /* Debug */,
+				4A9048DE93A683EBEB7EF1E0316D1946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF0235876A75CBB0799183F1A18A3E92 /* Build configuration list for PBXNativeTarget "Pods-Plugin-Orchestrator-LumenAVOrchestratorPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9732C777CB0ACB817F931B208CFC118 /* Debug */,
+				81724DB22A41B5013DC5D3F8D486E9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F111A46E067258DF199619057CA30F7A /* Build configuration list for PBXNativeTarget "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemoTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D4E59F61633FD9CA7EE310B841A3AC /* Debug */,
+				35E027F669A8246C4F7752F7BEB2E906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

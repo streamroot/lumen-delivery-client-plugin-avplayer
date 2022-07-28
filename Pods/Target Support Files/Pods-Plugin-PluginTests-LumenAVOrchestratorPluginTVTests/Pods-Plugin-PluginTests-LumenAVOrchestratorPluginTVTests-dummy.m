@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Plugin_PluginTests_LumenAVOrchestratorPluginTVTests : NSObject
+@end
+@implementation PodsDummy_Pods_Plugin_PluginTests_LumenAVOrchestratorPluginTVTests
+@end
