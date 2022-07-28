@@ -167,7 +167,6 @@ public class LMDeliveryClientPlugin {
   
   private let deliveryClient: LMDeliveryClient?
   private let interactor: LMAVPlayerInteractor
-  private var defaultAirplaySupport: Bool
   public let originalUri: URL
   public let finalUri: URL
   public let avPlayer: AVPlayer
@@ -178,7 +177,6 @@ public class LMDeliveryClientPlugin {
     self.interactor = interactor
     self.deliveryClient = deliveryClient
     self.finalUri = deliveryClient?.localManifestURL ?? originalUri
-    self.defaultAirplaySupport = true
     setupAirplayDefaultNotification()
   }
 
@@ -197,19 +195,15 @@ public class LMDeliveryClientPlugin {
       object: AVAudioSession.sharedInstance())
   }
 
-  private func removeAirplayDefaultNotification() {
-    self.defaultAirplaySupport = false // just to be suppppper sure
+  internal func removeAirplayDefaultNotification() {
     NotificationCenter.default.removeObserver(
       self,
       name: AVAudioSession.routeChangeNotification,
       object: AVAudioSession.sharedInstance())
   }
 
+  // This method is only called upon first Airplay switch
   @objc func audioOutputDidChange() {
-    if self.defaultAirplaySupport == false {
-      removeAirplayDefaultNotification() // just to be sure
-      return
-    }
     // Get the current audio route
     let currentRoute = AVAudioSession.sharedInstance().currentRoute
     // Check if the audio  output is an airplay type
@@ -217,6 +211,9 @@ public class LMDeliveryClientPlugin {
       return
     }
     print("Airplay device name: \(airplayOutput.portName)")
+    
+    // Consume one shot notification
+    removeAirplayDefaultNotification()
 
     // Save the current playbacktime
     let time = self.avPlayer.currentTime()
@@ -230,12 +227,6 @@ public class LMDeliveryClientPlugin {
     self.avPlayer.seek(to: time)
 
     self.deliveryClient?.stop()
-
-  }
-  
-  public func turnOffDefaultAirplayNotification() {
-    self.defaultAirplaySupport = false
-    removeAirplayDefaultNotification()
   }
 
   @discardableResult public func start() -> LMDeliveryClientPlugin {

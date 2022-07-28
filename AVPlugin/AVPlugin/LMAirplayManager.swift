@@ -74,6 +74,8 @@ public class LMAirplayManager {
       let newConfig = delegate.onAirplayDisabled()
       plugin = newConfig.plugin
       currentPlayer = newConfig.plugin.avPlayer
+      // Disable plugin airplay handling since this manager takes care of it
+      newConfig.plugin.removeAirplayDefaultNotification()
       seekAndPlay(autoplay: newConfig.autoplay)
     }
   }
