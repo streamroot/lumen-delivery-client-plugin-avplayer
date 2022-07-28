@@ -1,11 +1,3 @@
-//
-// Copyright © 2022 Streamroot. All rights reserved.
-//
-// This unpublished material is proprietary to Streamroot. All rights reserved.
-//
-// The methods and techniques described herein are considered trade secrets
-// and/or confidential. Reproduction or distribution, in whole or in part,
-// is forbidden except by express written permission of Streamroot.
 
 import AVKit
 #if MESH

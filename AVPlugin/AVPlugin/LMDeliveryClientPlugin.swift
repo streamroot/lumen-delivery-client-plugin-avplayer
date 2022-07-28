@@ -1,11 +1,3 @@
-//
-// Copyright © 2022 Streamroot. All rights reserved.
-//
-// This unpublished material is proprietary to Streamroot. All rights reserved.
-//
-// The methods and techniques described herein are considered trade secrets
-// and/or confidential. Reproduction or distribution, in whole or in part,
-// is forbidden except by express written permission of Streamroot.
 
 import Foundation
 import AVFoundation
@@ -77,7 +69,7 @@ public protocol PluginFinisher {
   func start(completion: @escaping ()->()) -> LMDeliveryClientPlugin
 }
 
-public struct LMDeliveryClientPlugin {
+public class LMDeliveryClientPlugin {
   public static func newBuilder(uri: URL) -> AVPlayerBuilder {
     return Builder(uri: uri)
   }
@@ -185,33 +177,83 @@ public struct LMDeliveryClientPlugin {
     self.interactor = interactor
     self.deliveryClient = deliveryClient
     self.finalUri = deliveryClient?.localManifestURL ?? originalUri
+    setupAirplayDefaultNotification()
   }
-  
+
+  deinit {
+    removeAirplayDefaultNotification()
+  }
+  // MARK: - Airplay support
+
+  /// To detect actual airplay switch we can use the device audio output
+  /// we need to register to AVAudioSession.routeChangeNotification
+  private func setupAirplayDefaultNotification() {
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(audioOutputDidChange),
+      name: AVAudioSession.routeChangeNotification,
+      object: AVAudioSession.sharedInstance())
+  }
+
+  internal func removeAirplayDefaultNotification() {
+    NotificationCenter.default.removeObserver(
+      self,
+      name: AVAudioSession.routeChangeNotification,
+      object: AVAudioSession.sharedInstance())
+  }
+
+  // This method is only called upon first Airplay switch
+  @objc func audioOutputDidChange() {
+    // Get the current audio route
+    let currentRoute = AVAudioSession.sharedInstance().currentRoute
+    // Check if the audio  output is an airplay type
+    guard let airplayOutput = currentRoute.outputs.filter({$0.portType == .airPlay}).first else {
+      return
+    }
+    print("Airplay device name: \(airplayOutput.portName)")
+    
+    // Consume one shot notification
+    removeAirplayDefaultNotification()
+
+    // Save the current playbacktime
+    let time = self.avPlayer.currentTime()
+
+    // Create a player item with the original url
+    let newItem  = AVPlayerItem(url: originalUri)
+    // Replace the player item to bypass local proxy
+    self.avPlayer.replaceCurrentItem(with: newItem)
+
+    // Seek to last saved time, especially helpful for VOD streams
+    self.avPlayer.seek(to: time)
+
+    self.deliveryClient?.stop()
+  }
+
   @discardableResult public func start() -> LMDeliveryClientPlugin {
     deliveryClient?.start()
     return self
   }
-  
+
   @discardableResult public func start(_ completion: @escaping ()->()) -> LMDeliveryClientPlugin {
     deliveryClient?.start(completion: completion)
     return self
   }
-  
+
   @discardableResult public func displayStatsView(_ view: UIView) -> LMDeliveryClientPlugin {
     deliveryClient?.displayStatView(view)
     return self
   }
-  
+
   @discardableResult public func toggleStatsView() -> LMDeliveryClientPlugin {
     deliveryClient?.toggleStatView()
     return self
   }
-  
+
   @discardableResult public func stop() -> LMDeliveryClientPlugin {
     deliveryClient?.stop()
     return self
   }
-  
+
   @discardableResult public func stop(_ completion: @escaping ()->()) -> LMDeliveryClientPlugin {
     deliveryClient?.stop(completion: completion)
     return self
@@ -222,7 +264,7 @@ extension LMDeliveryClientPlugin {
   public static func initializeApp(completionHandler: ((Bool)->())? = nil) {
     LMDeliveryClient.initializeApp(completionHandler: completionHandler)
   }
-  
+
   public static func initializeApp(withDeliveryKey: String, completionHandler: ((Bool)->())? = nil) {
     LMDeliveryClient.initializeApp(withDeliveryKey: withDeliveryKey, completionHandler: completionHandler)
   }

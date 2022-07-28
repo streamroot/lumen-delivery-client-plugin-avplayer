@@ -1,7 +1,7 @@
-ORCHESTRATOR_SDK_POD_NAME = 'LumenOrchestratorSDK'
-MESH_SDK_POD_NAME = 'LumenMeshSDK'
-IOS_TARGET_VERSION = '10.0'
-TVOS_TARGET_VERSION = '10.0'
+# Import config
+require './config.rb'
+
+puts "SDK version resolved to #{SDK_VERSION}"
 
 use_frameworks!
 
@@ -11,7 +11,7 @@ abstract_target 'Plugin' do
   project 'AVPlugin/AVPlugin'
 
   abstract_target 'Mesh' do
-    pod MESH_SDK_POD_NAME
+    pod MESH_SDK_POD_NAME, SDK_VERSION
 
     target 'LumenAVMeshPlugin' do
       platform :ios, IOS_TARGET_VERSION
@@ -23,7 +23,7 @@ abstract_target 'Plugin' do
   end
 
   abstract_target 'Orchestrator' do
-    pod ORCHESTRATOR_SDK_POD_NAME
+    pod ORCHESTRATOR_SDK_POD_NAME, SDK_VERSION
 
     target 'LumenAVOrchestratorPlugin' do
       platform :ios, IOS_TARGET_VERSION
@@ -54,7 +54,7 @@ abstract_target 'DemoApp' do
   project 'AVPlayerDemo/AVPlayerDemo'
 
   abstract_target 'Mesh' do
-    pod MESH_SDK_POD_NAME
+    pod MESH_SDK_POD_NAME, SDK_VERSION
 
     target 'AVPlayerMeshDemo' do
       platform :ios, IOS_TARGET_VERSION
@@ -66,7 +66,7 @@ abstract_target 'DemoApp' do
   end
 
   abstract_target 'Orchestrator' do
-    pod ORCHESTRATOR_SDK_POD_NAME
+    pod ORCHESTRATOR_SDK_POD_NAME, SDK_VERSION
 
     target 'AVPlayerOrchestratorDemo' do
       platform :ios, IOS_TARGET_VERSION

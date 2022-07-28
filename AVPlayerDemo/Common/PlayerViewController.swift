@@ -12,7 +12,8 @@ import LumenAVMeshPlugin
 import LumenAVOrchestratorPlugin
 #endif
 
-private let MANIFEST_URL = "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"
+//private let MANIFEST_URL = "http://wowza-test-cloudfront.streamroot.io/vodOrigin/tos1500.mp4/playlist.m3u8" //vod
+private let MANIFEST_URL = "https://wowza-test-cloudfront.streamroot.io/liveOriginTimestamps/bbb_30fps_live.smil/playlist.m3u8" // live
 
 extension AppDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -24,8 +25,8 @@ extension AppDelegate {
 class PlayerViewController: UIViewController {
   private var avpController = AVPlayerViewController()
   private var plugin: LMDeliveryClientPlugin?
-  private var statView: UIView!
-  private var preferedFocusView: UIView!
+  private var airplayManager: LMAirplayManager!
+  private var statView: UIView?
   private var statViewController: UIViewController!
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -42,40 +43,48 @@ class PlayerViewController: UIViewController {
     // Setup AVPlayerViewController view
     avpController.view.frame = self.view.bounds
     self.view.addSubview(avpController.view)
-    
-    // Create and start a delivery client
-    plugin = LMDeliveryClientPlugin.newBuilder(uri: URL(string: MANIFEST_URL)!)
-      .createAVPlayer()
-#if MESH
-      .meshOptions { o in
-        o.logLevel(.trace)
-      }
-#else
-      .orchestratorOptions { o in
-        o.logLevel(.trace)
-      }
-#endif
-      .start()
   }
-
+  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    playVideo()
+
+    airplayManager = LMAirplayManager(delegate: self)
   }
   
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
     plugin?.stop()
+    plugin = nil
+  }
+}
+
+extension PlayerViewController : LMAirplayManagerDelegate {
+  func onAirplayEnabled() -> (avPlayerWithItem: AVPlayer, autoplay: Bool) {
+    statView?.removeFromSuperview()
+    plugin = nil
+    
+    let avPlayerWithItem = AVPlayer(url: URL(string: MANIFEST_URL)!)
+    avpController.player = avPlayerWithItem
+    return (avPlayerWithItem: avPlayerWithItem, autoplay: true)
   }
   
-  func playVideo() {
-    guard let plugin = plugin else {
-      print("Local url manifest could not be generated")
-      return
-    }
-    
-    avpController.player = plugin.avPlayer
-    plugin.avPlayer.play()
+  func onAirplayDisabled() -> (plugin: LMDeliveryClientPlugin, autoplay: Bool) {
+    // Create and start a delivery client
+    self.plugin = LMDeliveryClientPlugin.newBuilder(uri: URL(string: MANIFEST_URL)!)
+      .createAVPlayer()
+#if MESH
+      .meshOptions { o in
+        o.logLevel(.trace)
+        o.meshProperty("classic")
+      }
+#else
+      .orchestratorOptions { o in
+        o.logLevel(.trace)
+        o.orchestratorProperty("classic")
+      }
+#endif
+      .start()
+    avpController.player = plugin!.avPlayer
     
     /* Setup stat view
      * AVPlayerViewController propose `contentOverlayView` to enrich
@@ -86,8 +95,9 @@ class PlayerViewController: UIViewController {
      * the player is started.
      */
     statView = UIView(frame: self.view.bounds)
-    avpController.view.addSubview(statView)
-    plugin.displayStatsView(statView)
+    avpController.view.addSubview(statView!)
+    plugin!.displayStatsView(statView!)
+    
+    return (plugin: plugin!, autoplay: true)
   }
 }
-
