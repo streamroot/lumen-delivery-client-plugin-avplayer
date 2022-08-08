@@ -24,20 +24,16 @@ LICENSE = {
 
 # DRY utils
 def default_spec_setup(s)
-    s.version           = VERSION
+    s.version           = PLUGIN_VERSION
     s.swift_version     = SWIFT_VERSION
     s.homepage          = HOMEPAGE
     s.author            = AUTHORS
     s.license           = LICENSE
     s.platform          = :ios
-    s.source            = { :git => 'https://github.com/streamroot/lumen-delivery-client-plugin-avplayer.git', :tag => "#{VERSION}"}
+    s.source            = { :git => 'https://github.com/streamroot/lumen-delivery-client-plugin-avplayer.git', :tag => "#{PLUGIN_VERSION}"}
     s.source_files      = 'AVPlugin/AVPlugin/*.swift'
     s.ios.deployment_target = IOS_TARGET_VERSION
     s.tvos.deployment_target = TVOS_TARGET_VERSION
-    s.pod_target_xcconfig = {
-        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-        'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64'
-    }
     s.user_target_xcconfig = {
         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
         'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64'

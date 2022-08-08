@@ -7,6 +7,9 @@ Pod::Spec.new do |s|
     s.summary           = MESH_SUMMARY
     s.dependency MESH_SDK_POD_NAME, "~> #{SDK_VERSION}.0"
 
-    # Code is preprocessor forked
-    s.pod_target_xcconfig['OTHER_SWIFT_FLAGS[*]'] = '-DMESH'
+    s.pod_target_xcconfig = {
+        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+        'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64',
+        'OTHER_SWIFT_FLAGS[*]' => '-DMESH' # Code is preprocessor forked
+    }
 end
