@@ -3,7 +3,7 @@
 This document is intended for :
 
 - The team in charge of updating and publishing the plugins
-- Integrators who neither want to use cocoapods nor carthage and want to link directly agains the plugin
+- Integrators who neither want to use cocoapods nor carthage and want to link directly against the plugin
 
 ## Repository structure
 
@@ -107,17 +107,21 @@ It is not recommended :
 
 After generating the framework you can just add it to you project and embed it to you application.
 
-## Deployment & versioning
+## Release & versioning
 
-Deployment is marked using a branch or a tag.
+Release is done by replacing the versions inside config.json, commiting and adding a new tag.
+The plugin version contains 4 components : SDK_VERSION(3).PLUGIN_PATCH(1), ex : SDK 22.06.0 -> 22.06.0.0.
 
-### Cocoapods
+All these steps can be done automatically by running the publish script :
+`./scripts/publish.sh SDK_VERSION PATCH_VERSION`
+If arguments are missing, you will be prompted.
 
-- Declare the new SDK version : change values in the [podfile](Podfile) and update using `pod update`
-- Declare the new Plugin version/SDK dependency : change values in the [podspecs](deployment)
-- Make sure you tag the commit and push it to the remote
-- Publish to cocoapods `pod trunk push`.
+This scripts :
+- Updates config.json
+- Commits and tags with the plugin version
+- runs pod spec lint
+- runs pod trunk push for both CDN Load Balancer / Mesh delivery
 
-### Carthage
+Note : you need ownership on the pods to be able to push.
 
-Deployment is not required as it is directly set integrator side (decentralized).
+Carthage is decentralized so the new version is made available at tag publication step.
