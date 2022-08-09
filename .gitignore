@@ -40,7 +40,7 @@ Carthage
 *.xcscmblueprint
 
 # Demo
-#Pods/
+Pods/
 
 *.orig
 

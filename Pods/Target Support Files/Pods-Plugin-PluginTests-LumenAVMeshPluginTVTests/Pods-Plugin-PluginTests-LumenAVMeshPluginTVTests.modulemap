@@ -1,6 +1,0 @@
-framework module Pods_Plugin_PluginTests_LumenAVMeshPluginTVTests {
-  umbrella header "Pods-Plugin-PluginTests-LumenAVMeshPluginTVTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

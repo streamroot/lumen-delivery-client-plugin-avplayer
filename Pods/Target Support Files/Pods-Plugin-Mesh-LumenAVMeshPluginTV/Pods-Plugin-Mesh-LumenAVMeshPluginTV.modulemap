@@ -1,6 +1,0 @@
-framework module Pods_Plugin_Mesh_LumenAVMeshPluginTV {
-  umbrella header "Pods-Plugin-Mesh-LumenAVMeshPluginTV-umbrella.h"
-
-  export *
-  module * { export * }
-}

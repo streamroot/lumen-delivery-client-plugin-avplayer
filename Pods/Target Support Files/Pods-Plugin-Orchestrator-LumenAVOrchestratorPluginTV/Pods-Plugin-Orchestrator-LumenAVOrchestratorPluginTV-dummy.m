@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_Plugin_Orchestrator_LumenAVOrchestratorPluginTV : NSObject
-@end
-@implementation PodsDummy_Pods_Plugin_Orchestrator_LumenAVOrchestratorPluginTV
-@end

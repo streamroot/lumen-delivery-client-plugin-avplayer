@@ -3,8 +3,8 @@ PODS:
   - LumenOrchestratorSDK (22.06.0)
 
 DEPENDENCIES:
-  - LumenMeshSDK (= 22.06)
-  - LumenOrchestratorSDK (= 22.06)
+  - LumenMeshSDK (= 22.06.0)
+  - LumenOrchestratorSDK (= 22.06.0)
 
 SPEC REPOS:
   trunk:

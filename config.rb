@@ -1,6 +1,10 @@
 require 'json'
 
-MUTABLE_CONTENT = JSON.parse(File.read('../config.json'))
+begin
+    MUTABLE_CONTENT = JSON.parse(File.read('../config.json'))
+rescue => e
+    MUTABLE_CONTENT = JSON.parse(File.read('./config.json'))
+end
 
 # SDK related
 MESH_SDK_POD_NAME = 'LumenMeshSDK'

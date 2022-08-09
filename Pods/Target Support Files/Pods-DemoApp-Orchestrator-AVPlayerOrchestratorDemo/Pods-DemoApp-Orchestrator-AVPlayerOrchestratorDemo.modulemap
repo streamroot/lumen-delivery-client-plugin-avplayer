@@ -1,6 +1,0 @@
-framework module Pods_DemoApp_Orchestrator_AVPlayerOrchestratorDemo {
-  umbrella header "Pods-DemoApp-Orchestrator-AVPlayerOrchestratorDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module Pods_Plugin_Orchestrator_LumenAVOrchestratorPluginTV {
-  umbrella header "Pods-Plugin-Orchestrator-LumenAVOrchestratorPluginTV-umbrella.h"
-
-  export *
-  module * { export * }
-}
