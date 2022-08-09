@@ -9,7 +9,7 @@ def fetch_input desc
 end
 
 SDK_VERSION = ARGV.length > 0 ? ARGV[0] : fetch_input("Please input SDK version (ex : 22.06.0)")
-PLUGIN_PATCH = (ARGV.length > 1 ? ARGV[1] : fetch_input("Please input SDK version (ex : 0)")).to_i
+PLUGIN_PATCH = (ARGV.length > 1 ? ARGV[1] : fetch_input("Please input PLUGIN patch (ex : 0)")).to_i
     
 puts "Resolved SDK to #{SDK_VERSION}, plugin patch to #{PLUGIN_PATCH}"
 
