@@ -40,7 +40,11 @@ Then, execute `pod install`
 
 ### Carthage
 
-TODO Carthage
+```
+github "streamroot/lumen-delivery-client-plugin-avplayer" "VERSION"
+```
+
+Since the plugin uses pods, after carthage checkout you need to run pod install inside the "lumen-delivery-client-plugin-avplayer" repository before continuing with carthage update.
 
 ## Configuration
 
@@ -75,10 +79,10 @@ We strongly recommand to set the delivery client key in `Info.plist`. However, i
 First, import the SDK:
 ```swift
 // For Mesh
-#import LumenAVMeshPlugin
+#import LumenMeshAVPlayerPlugin
 
 // For CDN Load Balancer
-#import LumenAVOrchestratorPlugin
+#import LumenCDNLoadBalancerAVPlayerPlugin
 ```
 
 ### SDK Initialization
