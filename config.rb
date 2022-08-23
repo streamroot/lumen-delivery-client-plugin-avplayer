@@ -19,8 +19,8 @@ PLUGIN_VERSION = "#{SDK_VERSION}.#{PLUGIN_PATCH}"
 
 SWIFT_VERSION = '5.5'
 
-MESH_AVPLUGIN_POD_NAME = 'LumenMeshAVPlayerPlugin'
-MESH_SUMMARY = 'Lumen Mesh SDK AVPlayer plugin, a new way to deliver large-scale OTT video'
+MESH_AVPLUGIN_POD_NAME = 'LumenMeshDeliveryAVPlayerPlugin'
+MESH_SUMMARY = 'Lumen Mesh Delivery SDK AVPlayer plugin, a new way to deliver large-scale OTT video'
 
 ORCHESTRATOR_AVPLUGIN_POD_NAME = 'LumenCDNLoadBalancerAVPlayerPlugin'
 ORCHESTRATOR_SUMMARY = 'Lumen CDN Load Balancer SDK AVPlayer plugin.'

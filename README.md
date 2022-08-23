@@ -25,7 +25,7 @@ For Mesh :
 ```ruby
 target 'MyApp' do
   use_frameworks!
-  pod 'LumenMeshAVPlayerPlugin'
+  pod 'LumenMeshDeliveryAVPlayerPlugin'
 end
 ```
 For CDN Load Balancer :
@@ -79,7 +79,7 @@ We strongly recommand to set the delivery client key in `Info.plist`. However, i
 First, import the SDK:
 ```swift
 // For Mesh
-#import LumenMeshAVPlayerPlugin
+#import LumenMeshDeliveryAVPlayerPlugin
 
 // For CDN Load Balancer
 #import LumenCDNLoadBalancerAVPlayerPlugin
