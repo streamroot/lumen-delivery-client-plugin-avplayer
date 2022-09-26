@@ -92,6 +92,7 @@ PLATFORMS
 DEPENDENCIES
   cocoapods (= 1.10.1)
   ffi (= 1.14.2)
+  json
 
 BUNDLED WITH
    2.2.26
