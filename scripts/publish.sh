@@ -1,4 +1,7 @@
-set -o pipefail
+set -oe pipefail
+
+echo 'Testing ENV for COCOAPODS_TRUNK_TOKEN'
+pod trunk me
 
 sdk_version=$1
 plugin_patch=$2
