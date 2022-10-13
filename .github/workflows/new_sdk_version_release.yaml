@@ -1,0 +1,31 @@
+name: iOS AVPlayer plugin release
+on:
+  workflow_dispatch:
+    inputs:
+      sdk_version:
+        description: "SDK Version (XX.XX.X)"
+        required: true
+        type: string
+      patch:
+        description: "Plugin patch"
+        required: false
+        type: integer
+        default: 0
+
+jobs:
+  release:
+    name: iOS/tvOS plugin release
+    runs-on: [self-hosted, macOS, X64]
+    env:
+      COCOAPODS_TRUNK_TOKEN: '${{ secrets.COCOAPODS_TRUNK_TOKEN }}'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          persist-credentials: true
+          fetch-depth: 0 # This garantees all history (unshallow to push to public repo)
+          token: "${{ secrets.NATIVE_BOT_PAT }}"
+
+      - name: Release Mesh + CDN Load Balancer plugins to pods
+        run: ./scripts/publish.sh ${{ github.event.inputs.sdk_version }} ${{ github.event.inputs.patch }}

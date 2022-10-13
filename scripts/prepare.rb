@@ -21,5 +21,12 @@ File.write('./config.json', JSON.pretty_generate({
 
 PLUGIN_VERSION = "#{SDK_VERSION}.#{PLUGIN_PATCH}"
 
-`git commit -am "Release #{PLUGIN_VERSION}"`
-`git tag -a "#{PLUGIN_VERSION}" -m "#{PLUGIN_VERSION}" -f && git push origin #{PLUGIN_VERSION}`
+`git commit -am "Release #{PLUGIN_VERSION}" --allow-empty`
+exit(false) unless $?.success?
+
+# Add public remote
+`git remote add origin_public git@github.com:streamroot/lumen-delivery-client-plugin-avplayer.git`
+
+# Push to both origins
+`git tag -a "#{PLUGIN_VERSION}" -m "#{PLUGIN_VERSION}" -f && git push && git push origin #{PLUGIN_VERSION} && git push origin_public #{PLUGIN_VERSION}`
+exit(false) unless $?.success?

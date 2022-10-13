@@ -1,6 +1,9 @@
 set -o pipefail
 
-ruby scripts/prepare.rb $1 $2
+sdk_version=$1
+plugin_patch=$2
+
+ruby scripts/prepare.rb $sdk_version $plugin_patch
 
 # Pod lint
 pod spec lint deployment/LumenCDNLoadBalancerAVPlayerPlugin.podspec --verbose
