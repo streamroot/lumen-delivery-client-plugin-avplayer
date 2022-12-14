@@ -323,3 +323,55 @@ In your PlayerViewController class:
         return (plugin: plugin!, autoplay: true)
       }
     }
+
+# Interactor capabilities
+
+## Mesh Delivery
+The SDK is player agnostic. All communication between the player and the delivery client that are player specific are implemented in a PlayerInteractor class.
+Each player has a different API that the SDK tries to use at its full potential in order to monitor and maximize the Quality of Service.
+The lack of some interfaces may :
+- Reduce QoS detection
+- Reduce offload
+
+### QoS
+
+**States**
+* INVALID : Unused
+* IDLE : OK
+* PLAYING : OK
+* PAUSED : OK
+* SEEKING : OK
+* REBUFFERING : OK
+* ENDED : OK
+
+**Misc**
+* Playback time : OK
+* Bandwidth control : OK
+* Buffer health : OK
+* Track switch : Experimental
+* Player error : OK
+* Frame drop : OK
+
+### Offload
+* Set buffer target : OK
+* Get buffer target : OK
+
+## CDN Load Balancer
+The SDK is player agnostic. All communication between the player and the delivery client that are player specific are implemented in a PlayerInteractor class.
+Each player has a different API that the SDK tries to use at its full potential in order to monitor and maximize the Quality of Service.
+
+**States**
+* INVALID : Unused
+* IDLE : OK
+* PLAYING : OK
+* PAUSED : OK
+* SEEKING : OK
+* REBUFFERING : OK
+* ENDED : OK
+
+**Misc**
+* Playback time : OK
+* Buffer health : OK
+* Track switch : Experimental
+* Player error : OK
+* Frame drop : OK
