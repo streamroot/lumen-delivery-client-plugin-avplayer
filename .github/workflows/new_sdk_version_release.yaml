@@ -26,6 +26,11 @@ jobs:
           persist-credentials: true
           fetch-depth: 0 # This garantees all history (unshallow to push to public repo)
           token: "${{ secrets.NATIVE_BOT_PAT }}"
+          
+      - name: Install required gems
+        run: bundle install
+        shell: bash -lo pipefail {0} # Interactive shell for RVM compatibility
 
       - name: Release Mesh + CDN Load Balancer plugins to pods
         run: ./scripts/publish.sh ${{ github.event.inputs.sdk_version }} ${{ github.event.inputs.patch }}
+        shell: bash -lo pipefail {0} # Interactive shell for RVM compatibility

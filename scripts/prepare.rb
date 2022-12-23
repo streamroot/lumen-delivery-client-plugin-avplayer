@@ -21,6 +21,12 @@ File.write('./config.json', JSON.pretty_generate({
 
 PLUGIN_VERSION = "#{SDK_VERSION}.#{PLUGIN_PATCH}"
 
+`./scripts/set_marketing_version.sh #{PLUGIN_VERSION}`
+exit(false) unless $?.success?
+
+`bundle exec pod install --repo-update`
+exit(false) unless $?.success?
+
 `git commit -am "Release #{PLUGIN_VERSION}" --allow-empty`
 exit(false) unless $?.success?
 

@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Deployment">
+      <Group
+         location = "container:"
+         name = "CI">
+         <FileRef
+            location = "group:.github/workflows/new_sdk_version_release.yaml">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "config">
+         <FileRef
+            location = "group:config.json">
+         </FileRef>
+         <FileRef
+            location = "group:config.rb">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "scripts">
+         <FileRef
+            location = "group:scripts/prepare.rb">
+         </FileRef>
+         <FileRef
+            location = "group:scripts/publish.sh">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "podspecs">
+         <FileRef
+            location = "group:deployment/LumenCDNLoadBalancerAVPlayerPlugin.podspec">
+         </FileRef>
+         <FileRef
+            location = "group:deployment/LumenMeshDeliveryAVPlayerPlugin.podspec">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Cartfile">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:AVPlayerDemo/AVPlayerDemo.xcodeproj">
    </FileRef>
