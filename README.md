@@ -122,7 +122,7 @@ plugin = LMDeliveryClientPlugin.newBuilder(uri: manifestUrl)
 
 In the previous example, the plugin is in charge of :
 - creating an AVPlayer instance
-- setting the AVPlayerItem with the correct url
+- creating and setting the AVPlayerItem with the correct url
 - creating our SDK
 - linking our SDK with the player
 - starting our SDK
@@ -140,6 +140,19 @@ You may prefer to give us your own AVPlayer :
 ```swift
 plugin = LMDeliveryClientPlugin.newBuilder(uri: manifestUrl)
       .avPlayer(MY_AVPLAYER)
+      .start()
+```
+
+You may prefer to give us your own AVPlayerItem :
+
+```swift
+plugin = LMDeliveryClientPlugin.newBuilder(uri: manifestUrl)
+      .createAVPlayer()
+      .avPlayerItemFactory({ finalUrl in
+        // You are free to return your own AVPlayerItem
+        // Always use finalUrl as your url
+        return AVPlayerItem(url: finalUrl)
+      })
       .start()
 ```
 
