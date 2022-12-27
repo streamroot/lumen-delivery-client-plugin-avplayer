@@ -24,8 +24,22 @@ PLUGIN_VERSION = "#{SDK_VERSION}.#{PLUGIN_PATCH}"
 `./scripts/set_marketing_version.sh #{PLUGIN_VERSION}`
 exit(false) unless $?.success?
 
-`bundle exec pod install --repo-update`
-exit(false) unless $?.success?
+# SDK availability may be delayed despite usage of --repo-update
+# Retry for 30 mins every 30 seconds until SDK is available or fail
+TIME_BARRIER = Time.now.to_i + 30 * 60 # 30 mins
+RETRY_PERIOD_S = 30
+loop do
+  puts `bundle exec pod install --repo-update`
+  break if $?.success?
+  
+  if Time.now.to_i > TIME_BARRIER
+    puts "Pod install failed, giving up."
+    exit(false)
+  end
+  
+  puts "Pod install failed, SDK not available yet ? Retrying..."
+  sleep(RETRY_PERIOD_S)
+end
 
 `git commit -am "Release #{PLUGIN_VERSION}" --allow-empty`
 exit(false) unless $?.success?
