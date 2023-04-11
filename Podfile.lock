@@ -1,10 +1,10 @@
 PODS:
-  - LumenMeshSDK (23.1.0)
-  - LumenOrchestratorSDK (23.1.0)
+  - LumenMeshSDK (23.3.0)
+  - LumenOrchestratorSDK (23.3.0)
 
 DEPENDENCIES:
-  - LumenMeshSDK (= 23.1.0)
-  - LumenOrchestratorSDK (= 23.1.0)
+  - LumenMeshSDK (= 23.3.0)
+  - LumenOrchestratorSDK (= 23.3.0)
 
 SPEC REPOS:
   trunk:
@@ -12,8 +12,8 @@ SPEC REPOS:
     - LumenOrchestratorSDK
 
 SPEC CHECKSUMS:
-  LumenMeshSDK: 26516fb143d18236f0cd9e1f6aa56a3f6e45127d
-  LumenOrchestratorSDK: 57397327d7f71987353aec31ca5782028097b593
+  LumenMeshSDK: beeb1ad6e52875e36232faf9faf3715d4fedbee3
+  LumenOrchestratorSDK: 0b67bc60098e4ef637f1affd8a2e9a41e7db3e03
 
 PODFILE CHECKSUM: 87d548993fcf6a2b3e6c616970575ea2336f22f5
 
